@@ -9,16 +9,16 @@
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
-    <script src="./theme/html5.js"></script>
+    <script src="../../theme/html5.js"></script>
     <![endif]-->
     
     <link rel="shortcut icon" href="/favicon.ico" title="Favicon" />
 
     <!-- Le styles -->
-    <link href="./theme/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./theme/css/bootstrap.min.responsive.css" rel="stylesheet">
-    <link href="./theme/css/local.css" rel="stylesheet">
-    <link href="./theme/css/pygments.css" rel="stylesheet">
+    <link href="../../theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../theme/css/bootstrap.min.responsive.css" rel="stylesheet">
+    <link href="../../theme/css/local.css" rel="stylesheet">
+    <link href="../../theme/css/pygments.css" rel="stylesheet">
 
 </head>
 
@@ -34,7 +34,7 @@
              <span class="icon-bar"></span>
          </a>
 
-        <a class="brand" href=".">localizator@notes</a>
+        <a class="brand" href="../..">localizator@notes</a>
 
         <div class="nav-collapse">
         <ul class="nav">
@@ -43,7 +43,7 @@
                     <li><a href="/category/apps/">Програми</a></li>
                     <li><a href="/category/howto/">ЯКЦЕ</a></li>
                     
-                            <li><a href="./about/">Про блог</a></li>
+                            <li><a href="../../about/">Про блог</a></li>
                         </ul>
 
          <form class="navbar-search pull-right" method="get" target="_blank" action="http://www.google.com/search">
@@ -64,31 +64,48 @@
     <div class="row">
 
         <div class="span9">
-        
-<h1>Архів</h1>
+            <div class='article'>
+        <div class="content-title">
+            <h1>Skype в Arch Linux</h1>
+            <span class="article-date">22 листопада 2012</span>&nbsp;<span class="article-section">у розділі <a href="../../category/linux/">linux</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="../../tag/skype/">skype</a>, <a href="../../tag/linux/">linux</a></span>        </div>
+	
+        <div><p>Для Linux <a href="http://localizatornotes.blogspot.com/2012/11/skype-41-linux.html"><strong>була представлена</strong></a> ​​нова версія популярного
+VoIP-клієнта Skype 4.1.  </p>
+<p>Основними <a href="http://localizatornotes.blogspot.com/2012/11/skype-41-linux.html">змінами</a> стали вхід через акаунт
+Microsoft і інтеграція з клієнтом обміну миттєвими повідомленнями
+Windows Live Messenger.  </p>
+<p><img alt="" src="https://lh6.googleusercontent.com/-agIITaoQyu8/UVwM349G0rI/AAAAAAAAKOo/4vBcX8RXeOo/s640/skypearch.png" /></p>
+<p>Тепер при авторизації буде запропоновано увійти через звичайний логін
+або через аккаунт створений в сервісах Microsoft, при виборі останнього
+можна буде об'єднати Skype із записами в Windows Live Messenger.  </p>
+<p><strong>Встановлення Skype 4.1 в Arch Linux:</strong>  </p>
+<p>Щоб встановити Skype в Arch Linux достатньо розкоментувати репозиторій
+![[multilib]][https://wiki.archlinux.org/index.php/Multilib] в файлі /etc/pacman.conf:  </p>
+<p>`[multilib]  </p>
+<p>SigLevel = PackageRequired  </p>
+<p>Include = /etc/pacman.d/mirrorlist`<br />
+після чого слід виконати синхронізацію бази даних репозиторію та
+встановити Skype:  </p>
+<div class="codehilite"><pre><span class="n">pacman</span> <span class="o">-</span><span class="n">Sy</span> <span class="n">skype</span>
+</pre></div></div>
+	
+        <hr>
+    	   
+        <h2>Коментарі</h2>
+	<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="localizator">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'localizatorblog'; 
 
-<table class="table">
-    <tbody>
-            <tr>
-        <td>10.04.2013</td>
-        <td><a href='2013-04-10/netctl-is-now-in-core/'>netctl вже в [core]</a></td>
-        </tr>
-            <tr>
-        <td>13.01.2013</td>
-        <td><a href='2013-01-13/syntax-highlighting-on-nano/'>Підсвітка в nano</a></td>
-        </tr>
-            <tr>
-        <td>22.11.2012</td>
-        <td><a href='2012-11-22/skype-on-arch-linux/'>Skype в Arch Linux</a></td>
-        </tr>
-            <tr>
-        <td>16.05.2012</td>
-        <td><a href='2012-05-16/systemd-on-archlinux/'>Systemd в ArchLinux</a></td>
-        </tr>
-        </tbody>
-</table>
-
-
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
         </div>
         
         <div class="span3">
@@ -99,8 +116,8 @@
                 ДИВІТЬСЯ ТАКОЖ
                 </li>
             
-                <li><a href="./archives.html">Архів тем</a>
-                <li><a href="./tags.html">Теги</a>
+                <li><a href="../../archives.html">Архів тем</a>
+                <li><a href="../../tags.html">Теги</a>
                                 <li><a href="http://feeds.feedburner.com/localizatornotes" rel="alternate">RSS</a></li>
                             </ul>
             </div>
@@ -112,9 +129,9 @@
                 РОЗДІЛИ
                 </li>
                 
-                                <li><a href="./category/arch/">arch</a></li>
-                                <li><a href="./category/archlinux/">archlinux</a></li>
-                                <li><a href="./category/linux/">linux</a></li>
+                                <li><a href="../../category/arch/">arch</a></li>
+                                <li><a href="../../category/archlinux/">archlinux</a></li>
+                                <li><a href="../../category/linux/">linux</a></li>
                                    
             </ul>
             </div>
@@ -173,7 +190,7 @@
 <footer class="copyright">
 </br>
 <p>
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk"><img style="border: 0px none; padding-bottom: 3px; vertical-align: middle;" alt="Ліцензія Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> «<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">localizator@notes</span>», <a xmlns:cc="http://creativecommons.org/ns#" href="." property="cc:attributionName" rel="cc:attributionURL">localizator</a>, ліцензія <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk">CCA 3.0 Unported License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk"><img style="border: 0px none; padding-bottom: 3px; vertical-align: middle;" alt="Ліцензія Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> «<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">localizator@notes</span>», <a xmlns:cc="http://creativecommons.org/ns#" href="../.." property="cc:attributionName" rel="cc:attributionURL">localizator</a>, ліцензія <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk">CCA 3.0 Unported License</a>.
 <span style="margin-left: 30px;"> Працює на <a href="http://docs.getpelican.com/">Pelican</a>. Шаблон від <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.</span>
 </p>
 </footer>

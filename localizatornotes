@@ -78,7 +78,25 @@ include /usr/share/nano/php.nanorc
 
 &lt;p&gt;Тепер подивимося як відображається файл з одним із влюченних шаблонів.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /&gt;&lt;/p&gt;
-&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Sun, 13 Jan 2013 03:03:00 +0200</pubDate><guid>tag:localizator.github.io,2013-01-13:2013-01-13/syntax-highlighting-on-nano/</guid><category>nano</category><category>linux</category></item><item><title>Systemd в ArchLinux</title><link>http://localizator.github.io/2012-05-16/systemd-on-archlinux/</link><description>&lt;p&gt;В extra вже присутній systemd, більш того від libsystemd вже залежать
+&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Sun, 13 Jan 2013 03:03:00 +0200</pubDate><guid>tag:localizator.github.io,2013-01-13:2013-01-13/syntax-highlighting-on-nano/</guid><category>nano</category><category>linux</category></item><item><title>Skype в Arch Linux</title><link>http://localizator.github.io/2012-11-22/skype-on-arch-linux/</link><description>&lt;p&gt;Для Linux &lt;a href="http://localizatornotes.blogspot.com/2012/11/skype-41-linux.html"&gt;&lt;strong&gt;була представлена&lt;/strong&gt;&lt;/a&gt; ​​нова версія популярного
+VoIP-клієнта Skype 4.1.  &lt;/p&gt;
+&lt;p&gt;Основними &lt;a href="http://localizatornotes.blogspot.com/2012/11/skype-41-linux.html"&gt;змінами&lt;/a&gt; стали вхід через акаунт
+Microsoft і інтеграція з клієнтом обміну миттєвими повідомленнями
+Windows Live Messenger.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://lh6.googleusercontent.com/-agIITaoQyu8/UVwM349G0rI/AAAAAAAAKOo/4vBcX8RXeOo/s640/skypearch.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Тепер при авторизації буде запропоновано увійти через звичайний логін
+або через аккаунт створений в сервісах Microsoft, при виборі останнього
+можна буде об'єднати Skype із записами в Windows Live Messenger.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Встановлення Skype 4.1 в Arch Linux:&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;Щоб встановити Skype в Arch Linux достатньо розкоментувати репозиторій
+![[multilib]][https://wiki.archlinux.org/index.php/Multilib] в файлі /etc/pacman.conf:  &lt;/p&gt;
+&lt;p&gt;`[multilib]  &lt;/p&gt;
+&lt;p&gt;SigLevel = PackageRequired  &lt;/p&gt;
+&lt;p&gt;Include = /etc/pacman.d/mirrorlist`&lt;br /&gt;
+після чого слід виконати синхронізацію бази даних репозиторію та
+встановити Skype:  &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pacman&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Sy&lt;/span&gt; &lt;span class="n"&gt;skype&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Thu, 22 Nov 2012 16:37:00 +0200</pubDate><guid>tag:localizator.github.io,2012-11-22:2012-11-22/skype-on-arch-linux/</guid><category>skype</category><category>linux</category></item><item><title>Systemd в ArchLinux</title><link>http://localizator.github.io/2012-05-16/systemd-on-archlinux/</link><description>&lt;p&gt;В extra вже присутній systemd, більш того від libsystemd вже залежать
 pulseaudio і частина гнома (gnome-session, gnome-control-center, etc).&lt;br /&gt;
 Якщо ви помічали що змінні носії автоматично монтується в
 /run/media/device, нічого страшного не сталося, ймовірно systemd вам уже

@@ -55,4 +55,22 @@ include /usr/share/nano/php.nanorc
 
 &lt;p&gt;Тепер подивимося як відображається файл з одним із влюченних шаблонів.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /&gt;&lt;/p&gt;
-&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry></feed>
+&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry><entry><title>Skype в Arch Linux</title><link href="http://localizator.github.io/2012-11-22/skype-on-arch-linux/" rel="alternate"></link><updated>2012-11-22T16:37:00+02:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2012-11-22:2012-11-22/skype-on-arch-linux/</id><summary type="html">&lt;p&gt;Для Linux &lt;a href="http://localizatornotes.blogspot.com/2012/11/skype-41-linux.html"&gt;&lt;strong&gt;була представлена&lt;/strong&gt;&lt;/a&gt; ​​нова версія популярного
+VoIP-клієнта Skype 4.1.  &lt;/p&gt;
+&lt;p&gt;Основними &lt;a href="http://localizatornotes.blogspot.com/2012/11/skype-41-linux.html"&gt;змінами&lt;/a&gt; стали вхід через акаунт
+Microsoft і інтеграція з клієнтом обміну миттєвими повідомленнями
+Windows Live Messenger.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="https://lh6.googleusercontent.com/-agIITaoQyu8/UVwM349G0rI/AAAAAAAAKOo/4vBcX8RXeOo/s640/skypearch.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Тепер при авторизації буде запропоновано увійти через звичайний логін
+або через аккаунт створений в сервісах Microsoft, при виборі останнього
+можна буде об'єднати Skype із записами в Windows Live Messenger.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Встановлення Skype 4.1 в Arch Linux:&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;Щоб встановити Skype в Arch Linux достатньо розкоментувати репозиторій
+![[multilib]][https://wiki.archlinux.org/index.php/Multilib] в файлі /etc/pacman.conf:  &lt;/p&gt;
+&lt;p&gt;`[multilib]  &lt;/p&gt;
+&lt;p&gt;SigLevel = PackageRequired  &lt;/p&gt;
+&lt;p&gt;Include = /etc/pacman.d/mirrorlist`&lt;br /&gt;
+після чого слід виконати синхронізацію бази даних репозиторію та
+встановити Skype:  &lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;pacman&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;Sy&lt;/span&gt; &lt;span class="n"&gt;skype&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="skype"></category><category term="linux"></category></entry></feed>
