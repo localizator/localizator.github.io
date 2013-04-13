@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>localizator@notes</title>
+    <meta name="description" content="">
+    <meta name="author" content="localizator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="./theme/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="/favicon.ico" title="Favicon" />
+
+    <!-- Le styles -->
+    <link href="./theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./theme/css/bootstrap.min.responsive.css" rel="stylesheet">
+    <link href="./theme/css/local.css" rel="stylesheet">
+    <link href="./theme/css/pygments.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="navbar-inner">
+    <div class="container">
+
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </a>
+
+        <a class="brand" href=".">localizator@notes</a>
+
+        <div class="nav-collapse">
+        <ul class="nav">
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="/category/news/">Новини</a></li>
+                    <li><a href="/category/apps/">Програми</a></li>
+                    <li><a href="/category/howto/">ЯКЦЕ</a></li>
+                    
+                            <li><a href="./about/">Про блог</a></li>
+                        </ul>
+
+         <form class="navbar-search pull-right" method="get" target="_blank" action="http://www.google.com/search">
+                    <div class="input-append">
+                        <input class="input-search" id="appendedInputButton" type="text" name="q">
+                        <button class="btn" type="submit"><i class="icon-search"></i></button>
+                    </div>
+                    <input type="hidden" name="sitesearch" value="localizator.github.com">
+                </form>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+    <div class="row">
+
+        <div class="span9">
+                
+
+        
+
+
+    <div class='article'>
+        <div class="content-title">
+            <a href="./2013-04-10/netctl-is-now-in-core/"><h1>netctl вже в [core]</h1></a>
+            <span class="article-date">10 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="./category/archlinux/">archlinux</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="./tag/arch/">arch</a>, <a href="./tag/linux/">linux</a>, <a href="./tag/systemd/">systemd</a>, <a href="./tag/netctl/">netctl</a></span> 
+        </div>
+        
+        <div><p>Розробники ArchLinux <a href="https://www.archlinux.org/news/netctl-is-now-in-core/"><strong>повідомили</strong></a> про інтеграцію в репозиторій [core] проекту нової системи налаштування параметрів підключення до мережі - <a href="https://wiki.archlinux.org/index.php/Netctl"><strong>netctl</strong></a>, розробленої для заміни раніше використовуваної системи <a href="https://wiki.archlinux.org/index.php/Netcfg"><strong>netcfg</strong></a> і заснованої на залученні можливостей systemd. Підтримка старого конфігуратора netcfg поки залишена у складі дистрибутива, але буде видалена в найближчому майбутньому. Всім користувачам рекомендується перейти до використання netctl, слідуючи <a href="https://wiki.archlinux.org/index.php/Netctl#Migrating_from_netcfg"><strong>покроковій інструкції</strong></a> з міграції та попередньо ознайомившись із системними інструкціями по <a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.1.txt">netctl</a>,<a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.profile.5.txt">netctl.profile</a> і <a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.special.7.txt">netctl.special</a>.</p>
+<!-- more -->
+
+<p>В основі netctl закладена ідея використання профілів з ​​налаштуваннями (приклади профілів можна знайти в директорії /etc/netctl/examples/, де <a href="https://github.com/joukewitteveen/netctl/tree/master/docs/examples">представлені</a> готові файли для налаштування виділення адреси по dhcp, статичної IP, бездротового з'єднання з WEP/WPA, мережевого моста, PPPoE, PPP, бондинга, VLAN, різних тунелів і т.п.). Для наочного конфігурування безпроводових мереж передбачена спеціальна консольна утиліта wifi-menu, що здійснює налаштування у формі меню.</p>
+<p>Приклад профілю для налаштування статичного IP:</p>
+<blockquote>
+<p>Description='A basic static ethernet connection'<br />
+Interface=eth0<br />
+Connection=ethernet<br />
+IP=static<br />
+Address=('192.168.1.23/24' '192.168.1.87/24')<br />
+#Routes=('192.168.0.0/24 via 192.168.1.2')<br />
+Gateway='192.168.1.1'<br />
+DNS=('192.168.1.1')</p>
+</blockquote>
+<p>Приклад профілю для налаштування PPPoE:</p>
+<blockquote>
+<p>Description='Example PPPoE connection'<br />
+Interface=eth0<br />
+Connection=pppoe<br />
+User='example@yourprovider.com'<br />
+Password='very secret'<br />
+ConnectionMode='persist'  </p>
+</blockquote></div>
+        <hr />
+    </div>
+		
+    
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="./2013-01-13/syntax-highlighting-on-nano/"><h2>Підсвітка в nano</h2></a>
+        <div class= "well small"> <span class="article-date">13 січня 2013</span>&nbsp;<span class="article-section">у розділі <a href="./category/linux/">linux</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="./tag/nano/">nano</a>, <a href="./tag/linux/">linux</a></span> </div>
+        <div class="summary"><p><img alt="nano logo" src="http://i.imgur.com/ptRfh.png" /></p>
+<p>Всім відомий простий текстовий редактор nano. Він поставляється як редактор за замовчуванням у більшості дистрибутивів linux і має величезну кількість користувачів, мабуть, більше, ніж будь-який інший редактор. Але найчастіше в ньому не вистачає однієї приємної дрібниці - підсвічування синтаксису. Втім, це можна легко і швидко виправити.
+<!-- more -->
+Шаблони з різним підсвічуванням знаходяться ...</!--></p> <a class="btn btn-info xsmall" href="./2013-01-13/syntax-highlighting-on-nano/">Читати далі &rarr;</a></div>
+    </div>	
+				
+            <div class="pagination">
+<ul>
+    <li class="prev disabled"><a href="#">&larr; Попередня</a></li>
+
+    <li class="active"><a href="./index.html">1</a></li>
+
+    <li class="next disabled"><a href="#">&rarr; Наступна</a></li>
+
+</ul>
+</div>    
+ 
+  
+        </div>
+        
+        <div class="span3">
+
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                ДИВІТЬСЯ ТАКОЖ
+                </li>
+            
+                <li><a href="./archives.html">Архів тем</a>
+                <li><a href="./tags.html">Теги</a>
+                                <li><a href="http://feeds.feedburner.com/localizatornotes" rel="alternate">RSS</a></li>
+                            </ul>
+            </div>
+
+
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                РОЗДІЛИ
+                </li>
+                
+                                <li><a href="./category/archlinux/">archlinux</a></li>
+                                <li><a href="./category/linux/">linux</a></li>
+                                   
+            </ul>
+            </div>
+            
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                ТЕГИ
+                </li>
+                
+                <ul>
+                                <li class="tag-1"><a href="/tag/linux/">linux</a></li>
+                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
+                                <li class="tag-10"><a href="/tag/nano/">nano</a></li>
+                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
+                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
+                            </ul>                
+            </ul>
+            </div>
+            
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                ПОСИЛАННЯ
+                </li>
+            
+                            <li><a href="http://www.archlinux.org/">Arch Linux</a></li>
+                            <li><a href="http://www.gentoo.org/">Gentoo</a></li>
+                            <li><a href="http://linux.org.ua/">LOU</a></li>
+                            <li><a href="http://www.fsf.org/">FSF</a></li>
+                            <li><a href="http://distrowatch.com/">DistroWatch</a></li>
+                            <li><a href="http://www.gnu.org/">GNU</a></li>
+                        </ul>
+            </div>
+            
+
+                        <div class="social">
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                СОЦІАЛЬНІ МЕРЕЖІ
+                </li>
+           
+                                <li><a href="https://plus.google.com/100150336880202859563">Google+</a></li>
+                                <li><a href="http://twitter.com/localizator">Twitter</a></li>
+                                <li><a href="http://github.com/localizator">GitHub</a></li>
+                                <li><a href="https://bitbucket.org/localizator">Bitbucket</a></li>
+                            </ul>
+            </div>
+            </div>
+            
+        </div>  
+    </div>     </div> 
+<footer class="copyright">
+</br>
+<p>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk"><img style="border: 0px none; padding-bottom: 3px; vertical-align: middle;" alt="Ліцензія Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> «<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">localizator@notes</span>», <a xmlns:cc="http://creativecommons.org/ns#" href="." property="cc:attributionName" rel="cc:attributionURL">localizator</a>, ліцензія <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk">CCA 3.0 Unported License</a>.
+<span style="margin-left: 30px;"> Працює на <a href="http://docs.getpelican.com/">Pelican</a>. Шаблон від <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.</span>
+</p>
+</footer>
+
+</div> <!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script>var _gaq=[['_setAccount','UA-24257878-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+<a href="http://localizator.github.io"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
+ 
+</body>
+</html>

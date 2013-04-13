@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/categories/linux.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-01-13T03:03:00+02:00</updated><entry><title>Підсвітка в nano</title><link href="http://localizator.github.io/2013-01-13/syntax-highlighting-on-nano/" rel="alternate"></link><updated>2013-01-13T03:03:00+02:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-01-13:2013-01-13/syntax-highlighting-on-nano/</id><summary type="html">&lt;p&gt;&lt;img alt="nano logo" src="http://i.imgur.com/ptRfh.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Всім відомий простий текстовий редактор nano. Він поставляється як редактор за замовчуванням у більшості дистрибутивів linux і має величезну кількість користувачів, мабуть, більше, ніж будь-який інший редактор. Але найчастіше в ньому не вистачає однієї приємної дрібниці - підсвічування синтаксису. Втім, це можна легко і швидко виправити.
+&lt;!-- more --&gt;
+Шаблони з різним підсвічуванням знаходяться за шляхом /usr/share/nano. Що там вдасться знайти?&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;ls /usr/share/nano
+
+asm.nanorc
+awk.nanorc
+c.nanorc
+cmake.nanorc
+css.nanorc
+debian.nanorc
+fortran.nanorc
+gentoo.nanorc
+groff.nanorc
+html.nanorc
+java.nanorc
+makefile.nanorc
+man-html/
+man.nanorc
+mgp.nanorc
+mutt.nanorc
+nanorc.nanorc
+objc.nanorc
+ocaml.nanorc
+patch.nanorc
+perl.nanorc
+php.nanorc
+pov.nanorc
+python.nanorc
+ruby.nanorc
+sh.nanorc
+tcl.nanorc
+tex.nanorc
+xml.nanorc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Отже, в нашому розпорядженні підсвічування мов програмування c, python, php і java. Можна розфарбувати html і css файли і дещо ще. Не так вже багато, але для справ насущних повинно вистачити.
+Справа за малим: створити файл .nanorc в домашній директорії і включити в нього необхідні стилі. Це може виглядати так:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;cat ~/.nanorc
+
+include /usr/share/nano/makefile.nanorc
+include /usr/share/nano/python.nanorc
+include /usr/share/nano/xml.nanorc
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/cmake.nanorc
+include /usr/share/nano/css.nanorc
+include /usr/share/nano/html.nanorc
+include /usr/share/nano/patch.nanorc
+include /usr/share/nano/php.nanorc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Тепер подивимося як відображається файл з одним із влюченних шаблонів.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry></feed>

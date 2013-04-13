@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/all-uk.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-10T03:03:00+03:00</updated><entry><title>netctl вже в [core]</title><link href="http://localizator.github.io/2013-04-10/netctl-is-now-in-core/" rel="alternate"></link><updated>2013-04-10T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-10:2013-04-10/netctl-is-now-in-core/</id><summary type="html">&lt;p&gt;Розробники ArchLinux &lt;a href="https://www.archlinux.org/news/netctl-is-now-in-core/"&gt;&lt;strong&gt;повідомили&lt;/strong&gt;&lt;/a&gt; про інтеграцію в репозиторій [core] проекту нової системи налаштування параметрів підключення до мережі - &lt;a href="https://wiki.archlinux.org/index.php/Netctl"&gt;&lt;strong&gt;netctl&lt;/strong&gt;&lt;/a&gt;, розробленої для заміни раніше використовуваної системи &lt;a href="https://wiki.archlinux.org/index.php/Netcfg"&gt;&lt;strong&gt;netcfg&lt;/strong&gt;&lt;/a&gt; і заснованої на залученні можливостей systemd. Підтримка старого конфігуратора netcfg поки залишена у складі дистрибутива, але буде видалена в найближчому майбутньому. Всім користувачам рекомендується перейти до використання netctl, слідуючи &lt;a href="https://wiki.archlinux.org/index.php/Netctl#Migrating_from_netcfg"&gt;&lt;strong&gt;покроковій інструкції&lt;/strong&gt;&lt;/a&gt; з міграції та попередньо ознайомившись із системними інструкціями по &lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.1.txt"&gt;netctl&lt;/a&gt;,&lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.profile.5.txt"&gt;netctl.profile&lt;/a&gt; і &lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.special.7.txt"&gt;netctl.special&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;В основі netctl закладена ідея використання профілів з ​​налаштуваннями (приклади профілів можна знайти в директорії /etc/netctl/examples/, де &lt;a href="https://github.com/joukewitteveen/netctl/tree/master/docs/examples"&gt;представлені&lt;/a&gt; готові файли для налаштування виділення адреси по dhcp, статичної IP, бездротового з'єднання з WEP/WPA, мережевого моста, PPPoE, PPP, бондинга, VLAN, різних тунелів і т.п.). Для наочного конфігурування безпроводових мереж передбачена спеціальна консольна утиліта wifi-menu, що здійснює налаштування у формі меню.&lt;/p&gt;
+&lt;p&gt;Приклад профілю для налаштування статичного IP:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Description='A basic static ethernet connection'&lt;br /&gt;
+Interface=eth0&lt;br /&gt;
+Connection=ethernet&lt;br /&gt;
+IP=static&lt;br /&gt;
+Address=('192.168.1.23/24' '192.168.1.87/24')&lt;br /&gt;
+#Routes=('192.168.0.0/24 via 192.168.1.2')&lt;br /&gt;
+Gateway='192.168.1.1'&lt;br /&gt;
+DNS=('192.168.1.1')&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Приклад профілю для налаштування PPPoE:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Description='Example PPPoE connection'&lt;br /&gt;
+Interface=eth0&lt;br /&gt;
+Connection=pppoe&lt;br /&gt;
+User='example@yourprovider.com'&lt;br /&gt;
+Password='very secret'&lt;br /&gt;
+ConnectionMode='persist'  &lt;/p&gt;
+&lt;/blockquote&gt;</summary><category term="arch"></category><category term="linux"></category><category term="systemd"></category><category term="netctl"></category></entry><entry><title>Підсвітка в nano</title><link href="http://localizator.github.io/2013-01-13/syntax-highlighting-on-nano/" rel="alternate"></link><updated>2013-01-13T03:03:00+02:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-01-13:2013-01-13/syntax-highlighting-on-nano/</id><summary type="html">&lt;p&gt;&lt;img alt="nano logo" src="http://i.imgur.com/ptRfh.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Всім відомий простий текстовий редактор nano. Він поставляється як редактор за замовчуванням у більшості дистрибутивів linux і має величезну кількість користувачів, мабуть, більше, ніж будь-який інший редактор. Але найчастіше в ньому не вистачає однієї приємної дрібниці - підсвічування синтаксису. Втім, це можна легко і швидко виправити.
+&lt;!-- more --&gt;
+Шаблони з різним підсвічуванням знаходяться за шляхом /usr/share/nano. Що там вдасться знайти?&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;ls /usr/share/nano
+
+asm.nanorc
+awk.nanorc
+c.nanorc
+cmake.nanorc
+css.nanorc
+debian.nanorc
+fortran.nanorc
+gentoo.nanorc
+groff.nanorc
+html.nanorc
+java.nanorc
+makefile.nanorc
+man-html/
+man.nanorc
+mgp.nanorc
+mutt.nanorc
+nanorc.nanorc
+objc.nanorc
+ocaml.nanorc
+patch.nanorc
+perl.nanorc
+php.nanorc
+pov.nanorc
+python.nanorc
+ruby.nanorc
+sh.nanorc
+tcl.nanorc
+tex.nanorc
+xml.nanorc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Отже, в нашому розпорядженні підсвічування мов програмування c, python, php і java. Можна розфарбувати html і css файли і дещо ще. Не так вже багато, але для справ насущних повинно вистачити.
+Справа за малим: створити файл .nanorc в домашній директорії і включити в нього необхідні стилі. Це може виглядати так:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;cat ~/.nanorc
+
+include /usr/share/nano/makefile.nanorc
+include /usr/share/nano/python.nanorc
+include /usr/share/nano/xml.nanorc
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/cmake.nanorc
+include /usr/share/nano/css.nanorc
+include /usr/share/nano/html.nanorc
+include /usr/share/nano/patch.nanorc
+include /usr/share/nano/php.nanorc
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Тепер подивимося як відображається файл з одним із влюченних шаблонів.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry></feed>

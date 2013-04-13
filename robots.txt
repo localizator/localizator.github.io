@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /static/images/
+Disallow: /theme/
+
+Sitemap: http://localizator.github.com/sitemap.xml
