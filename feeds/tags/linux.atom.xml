@@ -1,5 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/tags/linux.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-10T03:03:00+03:00</updated><entry><title>netctl вже в [core]</title><link href="http://localizator.github.io/2013-04-10/netctl-is-now-in-core/" rel="alternate"></link><updated>2013-04-10T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-10:2013-04-10/netctl-is-now-in-core/</id><summary type="html">&lt;p&gt;Розробники ArchLinux &lt;a href="https://www.archlinux.org/news/netctl-is-now-in-core/"&gt;&lt;strong&gt;повідомили&lt;/strong&gt;&lt;/a&gt; про інтеграцію в репозиторій [core] проекту нової системи налаштування параметрів підключення до мережі - &lt;a href="https://wiki.archlinux.org/index.php/Netctl"&gt;&lt;strong&gt;netctl&lt;/strong&gt;&lt;/a&gt;, розробленої для заміни раніше використовуваної системи &lt;a href="https://wiki.archlinux.org/index.php/Netcfg"&gt;&lt;strong&gt;netcfg&lt;/strong&gt;&lt;/a&gt; і заснованої на залученні можливостей systemd. Підтримка старого конфігуратора netcfg поки залишена у складі дистрибутива, але буде видалена в найближчому майбутньому. Всім користувачам рекомендується перейти до використання netctl, слідуючи &lt;a href="https://wiki.archlinux.org/index.php/Netctl#Migrating_from_netcfg"&gt;&lt;strong&gt;покроковій інструкції&lt;/strong&gt;&lt;/a&gt; з міграції та попередньо ознайомившись із системними інструкціями по &lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.1.txt"&gt;netctl&lt;/a&gt;,&lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.profile.5.txt"&gt;netctl.profile&lt;/a&gt; і &lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.special.7.txt"&gt;netctl.special&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/tags/linux.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-25T03:03:00+03:00</updated><entry><title>Вийшов реліз Ubuntu 13.04 Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-13-04-released/" rel="alternate"></link><updated>2013-04-25T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-13-04-released/</id><summary type="html">&lt;p&gt;Представлена ​​фінальна версія Ubuntu 13.04 Raring Ringtail, що вийшла з безліччю різних поліпшень як в плані інтерфейсу, так і в технічної складової. Також, за той час поки йшла розробка дистрибутива, відбулося безліч подій, так чи інакше вплинули на подальшу долю Ubuntu, серед яких варто відзначити редакцію для мобільних пристроїв, обговорення переходу на модель роллінг-релізу і «розумний пошук».&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu 13.04" src="/static/images/2013/04/logoubuntu1304.jpg" /&gt; 
+&lt;!-- more --&gt;&lt;/p&gt;
+&lt;p&gt;Так як з моменту виходу бета-релізу, який передбачає під собою заморозку функцій дистрибутива, не відбулося істотних змін, так що поверхнево розглянемо тільки ключові зміни з них.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Основні зміни інтерфейсу:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Були додані нові іконки для панелі Unity, лінз і ряду програм за умовчанням.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Unity new icons" src="/static/images/2013/04/unityicons.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Іконка перемикання робочих столів тепер міняється залежно від того, де перебуває користувач.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Unity Desktop switcher" src="/static/images/2013/04/desktop_switcher.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;З'явилися два нові способи перемикання між вікнами програм, таких як прокручування середньою кнопкою миші по значку і вибір потрібного вікна з контекстного меню.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Unity Window switcher" src="/static/images/2013/04/window_switcher.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Більш інтуїтивний інтерфейс перегляду докладної інформації в Dash, а також додана підтримка фірмового скроллбара.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Unity preview" src="/static/images/2013/04/unitypreview.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Scrollbar" src="/static/images/2013/04/scrollbar.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Вилучений системний трей, доданий новий індикатор Bluetooth і синхронізації з хмарними сервісами.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="New Sync Munu" src="/static/images/2013/04/syncmenu.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Діалоги виходу з системи отримали новий дизайн.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Shutdown dialog" src="/static/images/2013/04/shutdowndialog.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Logout dialog" src="/static/images/2013/04/logoutdialog.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;У режимі групування вікон (Super + W) при наведенні з'явилася яскраве помаранчеве обрамлення і заголовк програми.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Group Window" src="/static/images/2013/04/groupwindow.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;У мережевих облікових записах з'явилася можливість вибору окремих програм для кожного окремого сервісу.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Social Apps" src="/static/images/2013/04/socialapps.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;У налаштування зовнішнього вигляду внесено дві нові опції: включення/вимикання іконки перемикання робочого стала і переходу на робочий стіл.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="Desktop Settings" src="/static/images/2013/04/desktopsettings.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Програми&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Тепер у Dash підтримується пошук, навіть якщо була допущена помилка
+    в запиті. Це стало можливим за рахунок невеликої бібліотеки
+    libcolumbus, включеної за замовчуванням.&lt;/li&gt;
+&lt;li&gt;Клієнт мікроблогінгу Gwibber був видалений, але в системі залишилася
+    частина його компонентів, перейменованих в «Friends», а саме -
+    сервіс для взаємодії з онлайн акаунтами і лінзою.&lt;/li&gt;
+&lt;li&gt;У файловий менеджер Nautilus був доданий рекурсивний пошук.&lt;/li&gt;
+&lt;li&gt;З медіаплеєра Rhythmbox видалена інтеграція з Ubuntu One Music
+    Store, а в найближчому майбутньому це планується зробити в якості
+    поновлення і для попередніх релізів - Ubuntu 12.10 і 12.04.&lt;/li&gt;
+&lt;li&gt;Офісний пакет Libreoffice отримав підтримку глобального меню за
+    замовчуванням.&lt;/li&gt;
+&lt;li&gt;Вилучений Wubi - інсталятор Ubuntu з під операційної системи
+    Windows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Версії програм за замовчуванням:&lt;/strong&gt; веб-браузер Firefox 20.0, поштовий
+клієнт Thunderbird 17.0.5, файловий менеджер Nautilus 3.6.3, офісний
+пакет LibreOfice 4.0.2, програвач Rhythmbox 2.98, GNOME Contacts 3.6.2,
+Empathy 3.6.4, Totem (Videos ) 3.6.3, тестовий редактор Gedit 3.6.2,
+Deja Dup Backup Tool 26.0, Brasero 3.6.1, Transmission 2.77, Remmina
+1.0.0, центр програм 5.6.0 і GNOME Control Center 3.6.3. Все це поверх
+Compiz 0.9.9, Unity 7.0.0 і GTK 3.6.4. Ядро системи - 3.8.0-19-29 Ubuntu
+Linux kernel, засноване на Linux 3.8.8.&lt;/p&gt;
+&lt;h3&gt;Події&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Ubuntu Touch&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Цикл розробки Raring Ringtail був багатий на події,
+головним з яких став анонс Ubuntu Touch - спеціальної редакції Ubuntu
+для мобільних пристроїв (смартфонів і планшетів). Суть її призначення
+полягає у створення нової перехідної платформи, яка в подальшому зможе
+працювати під всіма доступними форм-факторами, адаптуючись під
+встановлену роздільну здатність.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu Touch" src="/static/images/2013/04/ubuntutouch.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Це буде досягатися за рахунок підвантаження певних шаблонів у
+кожній конкретній ситуації, при цьому використовуючи одну кодову базу і
+єдиний стиль оформлення інтерфейсу. Таким чином, не потрібно буде
+плодити безліч окремих версій, а використовувати всього лише одну
+редакцію дистрибутива.&lt;/p&gt;
+&lt;p&gt;Для втілення цих ідей у ​​життя були анонсовані нова версія десктоп оболонки Unity - Unity Next і новий дисплейний менеджер - Mir, заміну раніше планованого Wayland. Перші більш-менш готові збірки ми побачимо вже в травні, а повне завершення роботи планується не раніше виходу наступного випуску з тривалим періодом підтримки - Ubuntu 14.04.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Steam&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;Наступною важливою подією стало портування компанією Valve
+свого популярного клієнта цифрової дистрибуції Steam під Ubuntu. Крім
+того, також були адаптовані безліч ігор, число яких, включаючи різні
+доповнення, вже наближається до сотні. Сам клієнт доступний з центру
+програм.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Smart Scope&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Smart Scope - позиціонується як віддалена область, що дозволяє визначити найбільш підходящі місця для пошуку. Так як області в головному меню постійно поповнюються, а їх велика кількість може помітно сповільнити роботу системи, розробниками було прийнято рішення відкласти це навантаження на віддалений сервер, при цьому повністю зберігши весь необхідний функціонал.&lt;/p&gt;
+&lt;p&gt;Спочатку функція планувалася для включення до поточний реліз, але через достатню сирість і не завершеність проекту він був відкладений для включення в наступний випуск.&lt;/p&gt;
+&lt;p&gt;Проте, охочі можуть потестувати його з PPA.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:ubuntu-unity/experimental-certified
+sudo apt-get update
+sudo apt-get dist-upgrade
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Роллінг-реліз&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;У ході розробки Ubuntu 13.04 ходили палкі суперечки на рахунок переходу на модель роллінг-розробки, тобто з плавними поступовими оновленнями, а не як зараз з випусками кожні півроку. По суті, були б тільки LTS-релізи, а всі нові функції додавалися б тільки в міру готовності.&lt;/p&gt;
+&lt;p&gt;У цього підходу є свої плюси і мінуси, але так чи інакше було прийнято рішення залишити все як є. Однак для розробників таки підготують спеціальний PPA, де якраз будуть перебувати останні напрацювання.&lt;/p&gt;
+&lt;p&gt;Також в якості компромісу саміти, обговорення розвитку Ubuntu, будуть проводитися кожні три місяці у вигляді онлайн-конференцій двічі за реліз, а період підтримки проміжних випусків зменшиться з 18 до 9 місяців, починаючи з Ubuntu 13.10. Це дозволить частіше обговорювати деталі нововведень і знизити витрати, особливо на проведення місцевих зустрічей.&lt;/p&gt;
+&lt;p&gt;У цілому можна помітити, що Ubuntu дуже динамічно розвивається і при цьому намагається по мінімуму знизити витрати, наприклад, скоротивши обсяг друку дисків і перенісши саміти в онлайн.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Завантажити&lt;/strong&gt; &lt;a href="http://toloka.hurtom.com/viewtopic.php?t=46167"&gt;&lt;strong&gt;Гуртом&lt;/strong&gt;&lt;/a&gt; &lt;a href="http://www.ex.ua/view/40700000"&gt;&lt;strong&gt;EX.UA&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="ubuntu"></category><category term="linux"></category><category term="raringringtail"></category></entry><entry><title>netctl вже в [core]</title><link href="http://localizator.github.io/2013-04-10/netctl-is-now-in-core/" rel="alternate"></link><updated>2013-04-10T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-10:2013-04-10/netctl-is-now-in-core/</id><summary type="html">&lt;p&gt;Розробники ArchLinux &lt;a href="https://www.archlinux.org/news/netctl-is-now-in-core/"&gt;&lt;strong&gt;повідомили&lt;/strong&gt;&lt;/a&gt; про інтеграцію в репозиторій [core] проекту нової системи налаштування параметрів підключення до мережі - &lt;a href="https://wiki.archlinux.org/index.php/Netctl"&gt;&lt;strong&gt;netctl&lt;/strong&gt;&lt;/a&gt;, розробленої для заміни раніше використовуваної системи &lt;a href="https://wiki.archlinux.org/index.php/Netcfg"&gt;&lt;strong&gt;netcfg&lt;/strong&gt;&lt;/a&gt; і заснованої на залученні можливостей systemd. Підтримка старого конфігуратора netcfg поки залишена у складі дистрибутива, але буде видалена в найближчому майбутньому. Всім користувачам рекомендується перейти до використання netctl, слідуючи &lt;a href="https://wiki.archlinux.org/index.php/Netctl#Migrating_from_netcfg"&gt;&lt;strong&gt;покроковій інструкції&lt;/strong&gt;&lt;/a&gt; з міграції та попередньо ознайомившись із системними інструкціями по &lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.1.txt"&gt;netctl&lt;/a&gt;,&lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.profile.5.txt"&gt;netctl.profile&lt;/a&gt; і &lt;a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.special.7.txt"&gt;netctl.special&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- more --&gt;
 
 &lt;p&gt;В основі netctl закладена ідея використання профілів з ​​налаштуваннями (приклади профілів можна знайти в директорії /etc/netctl/examples/, де &lt;a href="https://github.com/joukewitteveen/netctl/tree/master/docs/examples"&gt;представлені&lt;/a&gt; готові файли для налаштування виділення адреси по dhcp, статичної IP, бездротового з'єднання з WEP/WPA, мережевого моста, PPPoE, PPP, бондинга, VLAN, різних тунелів і т.п.). Для наочного конфігурування безпроводових мереж передбачена спеціальна консольна утиліта wifi-menu, що здійснює налаштування у формі меню.&lt;/p&gt;
@@ -26,7 +130,7 @@ ConnectionMode='persist'  &lt;/p&gt;
 &lt;p&gt;Всім відомий простий текстовий редактор nano. Він поставляється як редактор за замовчуванням у більшості дистрибутивів linux і має величезну кількість користувачів, мабуть, більше, ніж будь-який інший редактор. Але найчастіше в ньому не вистачає однієї приємної дрібниці - підсвічування синтаксису. Втім, це можна легко і швидко виправити.
 &lt;!-- more --&gt;
 Шаблони з різним підсвічуванням знаходяться за шляхом /usr/share/nano. Що там вдасться знайти?&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;ls /usr/share/nano
+&lt;div class="highlight"&gt;&lt;pre&gt;ls /usr/share/nano
 
 asm.nanorc
 awk.nanorc
@@ -62,7 +166,7 @@ xml.nanorc
 
 &lt;p&gt;Отже, в нашому розпорядженні підсвічування мов програмування c, python, php і java. Можна розфарбувати html і css файли і дещо ще. Не так вже багато, але для справ насущних повинно вистачити.
 Справа за малим: створити файл .nanorc в домашній директорії і включити в нього необхідні стилі. Це може виглядати так:&lt;/p&gt;
-&lt;div class="codehilite"&gt;&lt;pre&gt;cat ~/.nanorc
+&lt;div class="highlight"&gt;&lt;pre&gt;cat ~/.nanorc
 
 include /usr/share/nano/makefile.nanorc
 include /usr/share/nano/python.nanorc
