@@ -1,0 +1,149 @@
+/* Styling for elements */
+body { font-size: 100%; }
+p { font-size: 100%; line-height: 1.6em; margin-top: 0.8em; margin-bottom: 0.8em; }
+li { line-height: 1.6em; }
+/*.table th, .table td { line-height: 1.3em; } */
+
+/* Styling for articles */
+.article { 
+    padding-bottom:20px;
+    /*padding-right: 40px;*/
+}
+.content-title { margin-bottom: 20px; }
+.article a:hover { text-decoration: none; } 
+
+
+
+/* Styling for the "other entries" section */
+/* Metadata */
+.well.small { padding: 6px 6px 4px; }
+
+/* Read more button */
+.btn-info.xsmall {
+    padding: 1px 3px 1px;
+    font-size: 11px;
+    float: right;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+/* Article summary */
+.summary { margin-bottom: 4em; }
+.summary pre { display: none; }
+
+
+/* Styling for Sidebar */
+.social a[href*='activestate.com']:before {content: url('../img/icons/activestate.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='atom.xml']:before {content: url('../img/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='bitbucket.org']:before {content: url('../img/icons/bitbucket.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='code.google.com']:before {content: url('../img/icons/phosting.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='delicious.com']:before {content: url('../img/icons/delicious.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='digg.com']:before {content: url('../img/icons/digg.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='facebook.com']:before {content: url('../img/icons/facebook.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='github.com']:before {content: url('../img/icons/github.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='gitorious.org']:before {content: url('../img/icons/gitorious.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='google.com/reader']:before {content: url('../img/icons/reader.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='jamendo.com']:before {content: url('../img/icons/jamendo.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='last.fm']:before {content: url('../img/icons/lastfm.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='linkedin.com']:before {content: url('../img/icons/linkedin.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='rss.xml']:before {content: url('../img/icons/rss.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='stackoverflow.com']:before {content: url('../img/icons/stackoverflow.png'); margin-right: 2px; vertical-align: -3px;}
+.social a[href*='twitter.com']:before {content: url('../img/icons/twitter.png'); margin-right: 2px; vertical-align: -3px;}
+
+/* SYM */
+
+.article img {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+    background-image:url('../img/background.png');
+}
+
+
+.article-section, .article-tag {
+    color: lightgrey;
+}
+
+.article-section a, .article-tag a {
+  color: lightgrey;
+  border-bottom: dashed thin lightgrey;
+}
+
+.nav a[href*='feedburner.com']:after {content: url('../img/icons/rss.png'); margin-left: 4px; vertical-align: -1px;}
+.nav a[href*='plus.google.com']:before {content: url('../img/icons/google_plus.png'); margin-right: 4px; vertical-align: -1px;}
+.nav a[href*='twitter.com']:before {content: url('../img/icons/twitter.png'); margin-right: 4px; vertical-align: -1px;}
+
+
+footer.copyright {
+    color: grey;
+}
+
+footer.copyright a {
+  color: grey;
+  border-bottom: dashed thin lightgrey;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.input-search {
+  width: 217px;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin-top: 2em; 
+}
+
+h4 {
+
+}
+h5 {
+  font-size: .83em;
+}
+
+h6 {
+  font-size: .75em;
+}
+
+.entry-content h2 {
+  border-bottom: 1px solid #E3E3E3;
+  margin-top: 2em;
+}
+
+h1, h2, h3 {
+  line-height: 30px;
+  color: #333;
+}
+
+.footnote {
+    font-size: 90%;
+}
+
+.content-main .o-download{text-align:center;text-indent:0;}
+.content-main .o-download a{display:inline-block;*display:inline;*zoom:1;padding:4px 12px;margin-bottom:0;font-size:14px;line-height:20px;text-align:center;vertical-align:middle;cursor:pointer;color:#333333;text-shadow:0 1px 1px rgba(255, 255, 255, 0.75);background-color:#f5f5f5;background-image:-moz-linear-gradient(top, #ffffff, #e6e6e6);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));background-image:-webkit-linear-gradient(top, #ffffff, #e6e6e6);background-image:-o-linear-gradient(top, #ffffff, #e6e6e6);background-image:linear-gradient(to bottom, #ffffff, #e6e6e6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);border-color:#e6e6e6 #e6e6e6 #bfbfbf;*background-color:#e6e6e6;border:1px solid #bbbbbb;*border:0;border-bottom-color:#a2a2a2;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;*margin-left:.3em;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);border-color:#c5c5c5;border-color:rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#fb5f1c;background-image:-moz-linear-gradient(top, #ff6e2f, #f44800);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ff6e2f), to(#f44800));background-image:-webkit-linear-gradient(top, #ff6e2f, #f44800);background-image:-o-linear-gradient(top, #ff6e2f, #f44800);background-image:linear-gradient(to bottom, #ff6e2f, #f44800);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff6e2f', endColorstr='#fff44800', GradientType=0);border-color:#f44800 #f44800 #a83100;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#f44800;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.content-main .o-download a:hover,.content-main 
+
+.o-download a:active,.content-main .o-download a.active,.content-main .o-download a.disabled,.content-main .o-download a[disabled]{color:#333333;background-color:#e6e6e6;*background-color:#d9d9d9;}
+
+.content-main .o-download a:active,.content-main .o-download a.active{background-color:#cccccc \9;}
+.content-main .o-download a:first-child{*margin-left:0;}
+.content-main .o-download a:hover{color:#333333;text-decoration:none;background-position:0 -15px;-webkit-transition:background-position 0.1s linear;-moz-transition:background-position 0.1s linear;-o-transition:background-position 0.1s linear;transition:background-position 0.1s linear;}
+.content-main .o-download a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+.content-main .o-download a.active,.content-main .o-download a:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);-moz-box-shadow:inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);box-shadow:inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);}
+.content-main .o-download a.disabled,.content-main .o-download a[disabled]{cursor:default;background-image:none;opacity:0.65;filter:alpha(opacity=65);-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+.content-main .o-download a [class^="icon-"],.content-main .o-download a [class*=" icon-"]{display:inline;}.content-main .o-download a [class^="icon-"].icon-large,.content-main .o-download a [class*=" icon-"].icon-large{line-height:.9em;}
+.content-main .o-download a [class^="icon-"].icon-spin,.content-main .o-download a [class*=" icon-"].icon-spin{display:inline-block;}
+.content-main .o-download a:hover,.content-main .o-download a:active,.content-main .o-download a.active,.content-main .o-download a.disabled,.content-main .o-download a[disabled]{color:#ffffff;background-color:#f44800;*background-color:#db4000;}
+.content-main .o-download a:active,.content-main .o-download a.active{background-color:#c13900 \9;}

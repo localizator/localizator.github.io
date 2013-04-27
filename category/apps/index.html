@@ -71,68 +71,22 @@
 
     <div class='article'>
         <div class="content-title">
-            <a href="http://localizator.github.io/2013-01-13/syntax-highlighting-on-nano/"><h1>Підсвітка в nano</h1></a>
-            <span class="article-date">13 січня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/linux/">linux</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/nano/">nano</a>, <a href="http://localizator.github.io/tag/linux/">linux</a></span> 
+            <a href="http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/"><h1>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</h1></a>
+            <span class="article-date">25 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/apps/">apps</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/ubuntu/">ubuntu</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/raringringtail/">raringringtail</a></span> 
         </div>
         
-        <div><p><img alt="nano logo" src="http://i.imgur.com/ptRfh.png" /></p>
-<p>Всім відомий простий текстовий редактор nano. Він поставляється як редактор за замовчуванням у більшості дистрибутивів linux і має величезну кількість користувачів, мабуть, більше, ніж будь-який інший редактор. Але найчастіше в ньому не вистачає однієї приємної дрібниці - підсвічування синтаксису. Втім, це можна легко і швидко виправити.
-<!-- more -->
-Шаблони з різним підсвічуванням знаходяться за шляхом /usr/share/nano. Що там вдасться знайти?</p>
-<div class="highlight"><pre>ls /usr/share/nano
-
-asm.nanorc
-awk.nanorc
-c.nanorc
-cmake.nanorc
-css.nanorc
-debian.nanorc
-fortran.nanorc
-gentoo.nanorc
-groff.nanorc
-html.nanorc
-java.nanorc
-makefile.nanorc
-man-html/
-man.nanorc
-mgp.nanorc
-mutt.nanorc
-nanorc.nanorc
-objc.nanorc
-ocaml.nanorc
-patch.nanorc
-perl.nanorc
-php.nanorc
-pov.nanorc
-python.nanorc
-ruby.nanorc
-sh.nanorc
-tcl.nanorc
-tex.nanorc
-xml.nanorc
-</pre></div>
-
-
-<p>Отже, в нашому розпорядженні підсвічування мов програмування c, python, php і java. Можна розфарбувати html і css файли і дещо ще. Не так вже багато, але для справ насущних повинно вистачити.
-Справа за малим: створити файл .nanorc в домашній директорії і включити в нього необхідні стилі. Це може виглядати так:</p>
-<div class="highlight"><pre>cat ~/.nanorc
-
-include /usr/share/nano/makefile.nanorc
-include /usr/share/nano/python.nanorc
-include /usr/share/nano/xml.nanorc
-include /usr/share/nano/sh.nanorc
-include /usr/share/nano/cmake.nanorc
-include /usr/share/nano/css.nanorc
-include /usr/share/nano/html.nanorc
-include /usr/share/nano/patch.nanorc
-include /usr/share/nano/php.nanorc
-</pre></div>
-
-
-<p>Тепер подивимося як відображається файл з одним із влюченних шаблонів.</p>
-<p><img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /></p>
-<p>Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.</p></div>
+        <div><p>Вийшла Ubuntu Tweak 0.8.4 - нова версія одного з самим популярних і відомих твікерів для тонкого налаштування Ubuntu. Крім усього іншого, серед плюсів варто відзначити можливість встановлення різних програм не доступних з центру програм і очищення кешу системи.</p>
+<p><img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak.png" />
+<!-- more --></p>
+<p>Нова версія вийшла з реалізацією повної підтримки Raring Ringtail і усуненням низки помилок, переглянути які <a href="http://blog.ubuntu-tweak.com/2013/04/25/ubuntu-tweak-0-8-4-released.html">можна тут</a>.</p>
+<p><img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak2.png" /></p>
+<p><img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak3.png" /></p>
+<p><strong>Встановлення Ubuntu Tweak 0.8.4</strong></p>
+<div class="highlight"><pre>sudo add-apt-repository ppa:tualatrix/ppa
+sudo apt-get update
+sudo apt-get install ubuntu-tweak
+</pre></div></div>
         <hr />
     </div>
 		
@@ -140,7 +94,7 @@ include /usr/share/nano/php.nanorc
 <ul>
     <li class="prev disabled"><a href="#">&larr; Попередня</a></li>
 
-    <li class="active"><a href="http://localizator.github.io/category/linux/.html">1</a></li>
+    <li class="active"><a href="http://localizator.github.io/category/apps/.html">1</a></li>
 
     <li class="next disabled"><a href="#">&rarr; Наступна</a></li>
 
