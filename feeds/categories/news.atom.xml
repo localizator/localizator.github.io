@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/categories/news.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-25T03:03:00+03:00</updated><entry><title>Вийшов реліз Ubuntu 13.04 Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-13-04-released/" rel="alternate"></link><updated>2013-04-25T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-13-04-released/</id><summary type="html">&lt;p&gt;Представлена ​​фінальна версія Ubuntu 13.04 Raring Ringtail, що вийшла з безліччю різних поліпшень як в плані інтерфейсу, так і в технічної складової. Також, за той час поки йшла розробка дистрибутива, відбулося безліч подій, так чи інакше вплинули на подальшу долю Ubuntu, серед яких варто відзначити редакцію для мобільних пристроїв, обговорення переходу на модель роллінг-релізу і «розумний пошук».&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/categories/news.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-28T09:30:00+03:00</updated><entry><title>Другий реліз-кандидат інсталятора Debian 7.0</title><link href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/" rel="alternate"></link><updated>2013-04-28T09:30:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-28:2013-04-28/debian-installer-7-0-rc2/</id><summary type="html">&lt;p&gt;&lt;a href="http://www.flickr.com/photos/localizatorua/8692289119/" target="_blank"&gt;&lt;img alt="Debian" src="http://farm9.staticflickr.com/8536/8692289119_fbc2cb8154.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lists.debian.org/debian-devel-announce/2013/04/msg00011.html"&gt;Представлений&lt;/a&gt; другий, фінальний, кандидат в релізи &lt;a href="http://www.debian.org/devel/debian-installer"&gt;програми встановлення&lt;/a&gt; Debian GNU/Linux для прийдешнього випуску "Wheezy" (7.0). В даний час в Wheezy всі блокуючі реліз помилки усунуті, вихід нової версії очікується 4 або 5 травня.&lt;/p&gt;
+&lt;!-- more --&gt;
+
+&lt;p&gt;Основні зміни, у порівнянні з першим кандидатом в релізи інсталятора Debian 7.0:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;З ядра 3.4.37 портовано підсистеми drm і agp, що дозволило включити більш сучасні графічні драйвери intel, nouveau і radeon;&lt;/li&gt;
+&lt;li&gt;У gdm3 реалізована базова підтримка екранного рідера Orca;&lt;/li&gt;
+&lt;li&gt;Усунені проблеми з роботою текстового інсталятора;&lt;/li&gt;
+&lt;li&gt;Порція поліпшень в роботі мережевого конфігуратора netcfg. Наприклад, активована одночасне встановлення пакетів iw і wireless-tools;&lt;/li&gt;
+&lt;li&gt;Підготовлений образ для завантаження по мережі для armhf-архітектури vexpress, використовуваної емулятором QEMU;&lt;/li&gt;
+&lt;li&gt;У пакет input-modules доданий модуль hid-topseed, а також драйвери для клавіатур і мишей з інтерфейсом USB hid-a4tech, hid-cypress, hid-ezkey, hid-kensington, hid-keytouch, hid-kye, hid-multitouch, hid -ortek, hid-primax, hid-quanta, hid-samsung, hid-speedlink;&lt;/li&gt;
+&lt;li&gt;До складу пакету initramfs-tools включена серія додаткових HUD-драйверів, таким чином всі доступні в інсталяторі драйвери пристроїв введення будуть в наявності і у встановленій системі;&lt;/li&gt;
+&lt;li&gt;Покращене встановлення на системи з EFI, проте ще спостерігаються проблеми із завантаженням в режимі UEFI на деяких системах;&lt;/li&gt;
+&lt;li&gt;DRM_PSB замінений на DRM_GMA500, DRM_GMA600, DRM_GMA3600 і DRM_MEDFIELD;&lt;/li&gt;
+&lt;li&gt;У модулі ata_piix включена підтримка госетвих систем MS Virtual PC;&lt;/li&gt;
+&lt;li&gt;Доданий новий драйвер alx для пристроїв на базі чіпів Atheros AR8161 і AR8162;&lt;/li&gt;
+&lt;li&gt;З ядра 3.7 перенесений драйвер iguanair (Iguanaworks USB IR Transceiver);&lt;/li&gt;
+&lt;li&gt;У модуль rt2800 додана підтримка чіпсетів RT5390R.&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="debian"></category><category term="linux"></category><category term="wheezy"></category><category term="installer"></category></entry><entry><title>Вийшов реліз Ubuntu 13.04 Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-13-04-released/" rel="alternate"></link><updated>2013-04-25T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-13-04-released/</id><summary type="html">&lt;p&gt;Представлена ​​фінальна версія Ubuntu 13.04 Raring Ringtail, що вийшла з безліччю різних поліпшень як в плані інтерфейсу, так і в технічної складової. Також, за той час поки йшла розробка дистрибутива, відбулося безліч подій, так чи інакше вплинули на подальшу долю Ubuntu, серед яких варто відзначити редакцію для мобільних пристроїв, обговорення переходу на модель роллінг-релізу і «розумний пошук».&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ubuntu 13.04" src="/static/images/2013/04/logoubuntu1304.jpg" /&gt; 
 &lt;!-- more --&gt;&lt;/p&gt;
 &lt;p&gt;Так як з моменту виходу бета-релізу, який передбачає під собою заморозку функцій дистрибутива, не відбулося істотних змін, так що поверхнево розглянемо тільки ключові зміни з них.&lt;/p&gt;
@@ -92,12 +111,11 @@ Linux kernel, засноване на Linux 3.8.8.&lt;/p&gt;
 &lt;p&gt;Smart Scope - позиціонується як віддалена область, що дозволяє визначити найбільш підходящі місця для пошуку. Так як області в головному меню постійно поповнюються, а їх велика кількість може помітно сповільнити роботу системи, розробниками було прийнято рішення відкласти це навантаження на віддалений сервер, при цьому повністю зберігши весь необхідний функціонал.&lt;/p&gt;
 &lt;p&gt;Спочатку функція планувалася для включення до поточний реліз, але через достатню сирість і не завершеність проекту він був відкладений для включення в наступний випуск.&lt;/p&gt;
 &lt;p&gt;Проте, охочі можуть потестувати його з PPA.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:ubuntu-unity/experimental-certified
+&lt;pre&gt;&lt;code&gt;:::sh
+sudo add-apt-repository ppa:ubuntu-unity/experimental-certified
 sudo apt-get update
 sudo apt-get dist-upgrade
-&lt;/pre&gt;&lt;/div&gt;
-
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Роллінг-реліз&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;У ході розробки Ubuntu 13.04 ходили палкі суперечки на рахунок переходу на модель роллінг-розробки, тобто з плавними поступовими оновленнями, а не як зараз з випусками кожні півроку. По суті, були б тільки LTS-релізи, а всі нові функції додавалися б тільки в міру готовності.&lt;/p&gt;
 &lt;p&gt;У цього підходу є свої плюси і мінуси, але так чи інакше було прийнято рішення залишити все як є. Однак для розробників таки підготують спеціальний PPA, де якраз будуть перебувати останні напрацювання.&lt;/p&gt;

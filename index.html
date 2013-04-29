@@ -71,25 +71,50 @@
 
     <div class='article'>
         <div class="content-title">
-            <a href="http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/"><h1>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</h1></a>
-            <span class="article-date">25 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/apps/">apps</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/ubuntu/">ubuntu</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/raringringtail/">raringringtail</a></span> 
+            <a href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/"><h1>Другий реліз-кандидат інсталятора Debian 7.0</h1></a>
+            <span class="article-date">28 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/debian/">debian</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/wheezy/">wheezy</a>, <a href="http://localizator.github.io/tag/installer/">installer</a></span> 
         </div>
         
-        <div><p>Вийшла Ubuntu Tweak 0.8.4 - нова версія одного з самим популярних і відомих твікерів для тонкого налаштування Ubuntu. Крім усього іншого, серед плюсів варто відзначити можливість встановлення різних програм не доступних з центру програм і очищення кешу системи.</p>
-<p><img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak.png" />
-<!-- more --></p>
-<p>Нова версія вийшла з реалізацією повної підтримки Raring Ringtail і усуненням низки помилок, переглянути які <a href="http://blog.ubuntu-tweak.com/2013/04/25/ubuntu-tweak-0-8-4-released.html">можна тут</a>.</p>
-<p><img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak2.png" /></p>
-<p><img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak3.png" /></p>
-<p><strong>Встановлення Ubuntu Tweak 0.8.4</strong></p>
-<div class="highlight"><pre>sudo add-apt-repository ppa:tualatrix/ppa
-sudo apt-get update
-sudo apt-get install ubuntu-tweak
-</pre></div></div>
+        <div><p><a href="http://www.flickr.com/photos/localizatorua/8692289119/" target="_blank"><img alt="Debian" src="http://farm9.staticflickr.com/8536/8692289119_fbc2cb8154.jpg" /></a></p>
+<p><a href="http://lists.debian.org/debian-devel-announce/2013/04/msg00011.html">Представлений</a> другий, фінальний, кандидат в релізи <a href="http://www.debian.org/devel/debian-installer">програми встановлення</a> Debian GNU/Linux для прийдешнього випуску "Wheezy" (7.0). В даний час в Wheezy всі блокуючі реліз помилки усунуті, вихід нової версії очікується 4 або 5 травня.</p>
+<!-- more -->
+
+<p>Основні зміни, у порівнянні з першим кандидатом в релізи інсталятора Debian 7.0:</p>
+<ul>
+<li>З ядра 3.4.37 портовано підсистеми drm і agp, що дозволило включити більш сучасні графічні драйвери intel, nouveau і radeon;</li>
+<li>У gdm3 реалізована базова підтримка екранного рідера Orca;</li>
+<li>Усунені проблеми з роботою текстового інсталятора;</li>
+<li>Порція поліпшень в роботі мережевого конфігуратора netcfg. Наприклад, активована одночасне встановлення пакетів iw і wireless-tools;</li>
+<li>Підготовлений образ для завантаження по мережі для armhf-архітектури vexpress, використовуваної емулятором QEMU;</li>
+<li>У пакет input-modules доданий модуль hid-topseed, а також драйвери для клавіатур і мишей з інтерфейсом USB hid-a4tech, hid-cypress, hid-ezkey, hid-kensington, hid-keytouch, hid-kye, hid-multitouch, hid -ortek, hid-primax, hid-quanta, hid-samsung, hid-speedlink;</li>
+<li>До складу пакету initramfs-tools включена серія додаткових HUD-драйверів, таким чином всі доступні в інсталяторі драйвери пристроїв введення будуть в наявності і у встановленій системі;</li>
+<li>Покращене встановлення на системи з EFI, проте ще спостерігаються проблеми із завантаженням в режимі UEFI на деяких системах;</li>
+<li>DRM_PSB замінений на DRM_GMA500, DRM_GMA600, DRM_GMA3600 і DRM_MEDFIELD;</li>
+<li>У модулі ata_piix включена підтримка госетвих систем MS Virtual PC;</li>
+<li>Доданий новий драйвер alx для пристроїв на базі чіпів Atheros AR8161 і AR8162;</li>
+<li>З ядра 3.7 перенесений драйвер iguanair (Iguanaworks USB IR Transceiver);</li>
+<li>У модуль rt2800 додана підтримка чіпсетів RT5390R.</li>
+</ul></div>
         <hr />
     </div>
 		
+    
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/"><h2>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</h2></a>
+        <div class= "well small"> <span class="article-date">25 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/apps/">apps</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/ubuntu/">ubuntu</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/raringringtail/">raringringtail</a></span> </div>
+        <div class="summary"><p>Вийшла Ubuntu Tweak 0.8.4 - нова версія одного з самим популярних і відомих твікерів для тонкого налаштування Ubuntu. Крім усього іншого, серед плюсів варто відзначити можливість встановлення різних програм не доступних з центру програм і очищення кешу системи.
+<!-- more -->
+<img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak.png" /></p>
+<p>Нова версія вийшла з реалізацією повної підтримки Raring Ringtail і усуненням ...</p> <a class="btn btn-info xsmall" href="http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/">Читати далі &rarr;</a></div>
+    </div>	
+				
     
  
         
@@ -182,13 +207,16 @@ sudo apt-get install ubuntu-tweak
                 </li>
                 
                 <ul>
-                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
-                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
+                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
                                 <li class="tag-10"><a href="/tag/nano/">nano</a></li>
-                                <li class="tag-5"><a href="/tag/raringringtail/">raringringtail</a></li>
+                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
+                                <li class="tag-10"><a href="/tag/installer/">installer</a></li>
+                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
+                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
+                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
                                 <li class="tag-1"><a href="/tag/linux/">linux</a></li>
-                                <li class="tag-5"><a href="/tag/ubuntu/">ubuntu</a></li>
                                 <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
+                                <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
                             </ul>                
             </ul>
             </div>

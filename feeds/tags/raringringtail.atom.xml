@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/tags/raringringtail.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-25T13:30:00+03:00</updated><entry><title>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/" rel="alternate"></link><updated>2013-04-25T13:30:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/</id><summary type="html">&lt;p&gt;Вийшла Ubuntu Tweak 0.8.4 - нова версія одного з самим популярних і відомих твікерів для тонкого налаштування Ubuntu. Крім усього іншого, серед плюсів варто відзначити можливість встановлення різних програм не доступних з центру програм і очищення кешу системи.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak.png" /&gt;
-&lt;!-- more --&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/tags/raringringtail.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-25T13:30:00+03:00</updated><entry><title>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/" rel="alternate"></link><updated>2013-04-25T13:30:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/</id><summary type="html">&lt;p&gt;Вийшла Ubuntu Tweak 0.8.4 - нова версія одного з самим популярних і відомих твікерів для тонкого налаштування Ubuntu. Крім усього іншого, серед плюсів варто відзначити можливість встановлення різних програм не доступних з центру програм і очищення кешу системи.
+&lt;!-- more --&gt;
+&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Нова версія вийшла з реалізацією повної підтримки Raring Ringtail і усуненням низки помилок, переглянути які &lt;a href="http://blog.ubuntu-tweak.com/2013/04/25/ubuntu-tweak-0-8-4-released.html"&gt;можна тут&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak2.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak3.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Встановлення Ubuntu Tweak 0.8.4&lt;/strong&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:tualatrix/ppa
+&lt;pre&gt;&lt;code&gt;:::sh
+sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update
 sudo apt-get install ubuntu-tweak
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="ubuntu"></category><category term="linux"></category><category term="raringringtail"></category></entry><entry><title>Вийшов реліз Ubuntu 13.04 Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-13-04-released/" rel="alternate"></link><updated>2013-04-25T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-13-04-released/</id><summary type="html">&lt;p&gt;Представлена ​​фінальна версія Ubuntu 13.04 Raring Ringtail, що вийшла з безліччю різних поліпшень як в плані інтерфейсу, так і в технічної складової. Також, за той час поки йшла розробка дистрибутива, відбулося безліч подій, так чи інакше вплинули на подальшу долю Ubuntu, серед яких варто відзначити редакцію для мобільних пристроїв, обговорення переходу на модель роллінг-релізу і «розумний пошук».&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</summary><category term="ubuntu"></category><category term="linux"></category><category term="raringringtail"></category></entry><entry><title>Вийшов реліз Ubuntu 13.04 Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-13-04-released/" rel="alternate"></link><updated>2013-04-25T03:03:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-13-04-released/</id><summary type="html">&lt;p&gt;Представлена ​​фінальна версія Ubuntu 13.04 Raring Ringtail, що вийшла з безліччю різних поліпшень як в плані інтерфейсу, так і в технічної складової. Також, за той час поки йшла розробка дистрибутива, відбулося безліч подій, так чи інакше вплинули на подальшу долю Ubuntu, серед яких варто відзначити редакцію для мобільних пристроїв, обговорення переходу на модель роллінг-релізу і «розумний пошук».&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Ubuntu 13.04" src="/static/images/2013/04/logoubuntu1304.jpg" /&gt; 
 &lt;!-- more --&gt;&lt;/p&gt;
 &lt;p&gt;Так як з моменту виходу бета-релізу, який передбачає під собою заморозку функцій дистрибутива, не відбулося істотних змін, так що поверхнево розглянемо тільки ключові зміни з них.&lt;/p&gt;
@@ -102,12 +103,11 @@ Linux kernel, засноване на Linux 3.8.8.&lt;/p&gt;
 &lt;p&gt;Smart Scope - позиціонується як віддалена область, що дозволяє визначити найбільш підходящі місця для пошуку. Так як області в головному меню постійно поповнюються, а їх велика кількість може помітно сповільнити роботу системи, розробниками було прийнято рішення відкласти це навантаження на віддалений сервер, при цьому повністю зберігши весь необхідний функціонал.&lt;/p&gt;
 &lt;p&gt;Спочатку функція планувалася для включення до поточний реліз, але через достатню сирість і не завершеність проекту він був відкладений для включення в наступний випуск.&lt;/p&gt;
 &lt;p&gt;Проте, охочі можуть потестувати його з PPA.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo add-apt-repository ppa:ubuntu-unity/experimental-certified
+&lt;pre&gt;&lt;code&gt;:::sh
+sudo add-apt-repository ppa:ubuntu-unity/experimental-certified
 sudo apt-get update
 sudo apt-get dist-upgrade
-&lt;/pre&gt;&lt;/div&gt;
-
-
+&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Роллінг-реліз&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;У ході розробки Ubuntu 13.04 ходили палкі суперечки на рахунок переходу на модель роллінг-розробки, тобто з плавними поступовими оновленнями, а не як зараз з випусками кожні півроку. По суті, були б тільки LTS-релізи, а всі нові функції додавалися б тільки в міру готовності.&lt;/p&gt;
 &lt;p&gt;У цього підходу є свої плюси і мінуси, але так чи інакше було прийнято рішення залишити все як є. Однак для розробників таки підготують спеціальний PPA, де якраз будуть перебувати останні напрацювання.&lt;/p&gt;
