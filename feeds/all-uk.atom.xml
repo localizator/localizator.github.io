@@ -209,4 +209,39 @@ include /usr/share/nano/php.nanorc
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Тепер подивимося як відображається файл з одним із влюченних шаблонів.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /&gt;&lt;/p&gt;
-&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry></feed>
+&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry><entry><title>Arch Linux + Openbox [Травень, 2012]</title><link href="http://localizator.github.io/2012-05-20/arch-linux-openbox-may-2012/" rel="alternate"></link><updated>2012-05-20T08:21:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2012-05-20:2012-05-20/arch-linux-openbox-may-2012/</id><summary type="html">&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+[![][]][]
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a name="more"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+[![][1]][]
+
+&lt;/div&gt;
+
+&lt;div class="separator" style="clear:both;text-align:center;"&gt;
+[![][2]][]
+
+&lt;/div&gt;
+
+&lt;p&gt;на &lt;strong&gt;&lt;a href="http://localizator.deviantart.com/art/Arch-Linux-Openbox-May-2012-303466751"&gt;deviantART&lt;/a&gt;&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Файли налаштувань:&lt;/strong&gt;&lt;br /&gt;
+[&lt;strong&gt;\~/.config/openbox/rc.xml&lt;/strong&gt;][]&lt;br /&gt;
+[&lt;strong&gt;\~/.config/openbox/menu.xml&lt;/strong&gt;][]&lt;br /&gt;
+[&lt;strong&gt;\~/.config/openbox/autostart&lt;/strong&gt;][]&lt;br /&gt;
+[&lt;strong&gt;\~/.conkyrc&lt;/strong&gt;][]  &lt;/p&gt;
+&lt;p&gt;Також можна отримати ці налаштування з GitHub:  &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;git clone git@github.com:localizator/dotfiles.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Openbox тема: &lt;/strong&gt;&lt;span style="color:#0000ee;"&gt;&lt;strong&gt;&lt;u&gt;&lt;a href="http://opendesktop.org/content/show.php/BC+WM?content=150811"&gt;BC WM
+CR&lt;/a&gt;&lt;/u&gt;&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;strong&gt;Gtk Theme: &lt;a href="http://goo.gl/xeBRS"&gt;Orta&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Icons: &lt;a href="http://goo.gl/7mhZ"&gt;Feanza&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;Шпалери: &lt;a href="http://db.tt/dQogX5nk"&gt;Be Original&lt;/a&gt;&lt;/strong&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://bbs.archlinux.org/viewtopic.php?pid=1104587#p1104587"&gt;Пост&lt;/a&gt; на форумі Arch Linux&lt;/strong&gt;&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;[&lt;img alt="" src="http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230049_1280x1024_scrot.png" /&gt;]: http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230049_1280x1024_scrot1.png
+  [&lt;img alt="" src="http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230238_1280x1024_scrot.png" /&gt;]: http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230238_1280x1024_scrot1.png
+  [&lt;img alt="" src="http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230956_1280x1024_scrot.png" /&gt;]: http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230956_1280x1024_scrot1.png&lt;/p&gt;</summary><category term="arch"></category><category term="linux"></category></entry></feed>

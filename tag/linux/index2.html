@@ -69,45 +69,6 @@
 
         
 
-
-    <div class='article'>
-        <div class="content-title">
-            <a href="http://localizator.github.io/2013-04-10/netctl-is-now-in-core/"><h1>netctl вже в [core]</h1></a>
-            <span class="article-date">10 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/archlinux/">archlinux</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/arch/">arch</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/systemd/">systemd</a>, <a href="http://localizator.github.io/tag/netctl/">netctl</a></span> 
-        </div>
-        
-        <div><p>Розробники ArchLinux <a href="https://www.archlinux.org/news/netctl-is-now-in-core/"><strong>повідомили</strong></a> про інтеграцію в репозиторій [core] проекту нової системи налаштування параметрів підключення до мережі - <a href="https://wiki.archlinux.org/index.php/Netctl"><strong>netctl</strong></a>, розробленої для заміни раніше використовуваної системи <a href="https://wiki.archlinux.org/index.php/Netcfg"><strong>netcfg</strong></a> і заснованої на залученні можливостей systemd. Підтримка старого конфігуратора netcfg поки залишена у складі дистрибутива, але буде видалена в найближчому майбутньому. Всім користувачам рекомендується перейти до використання netctl, слідуючи <a href="https://wiki.archlinux.org/index.php/Netctl#Migrating_from_netcfg"><strong>покроковій інструкції</strong></a> з міграції та попередньо ознайомившись із системними інструкціями по <a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.1.txt">netctl</a>,<a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.profile.5.txt">netctl.profile</a> і <a href="https://github.com/joukewitteveen/netctl/blob/master/docs/netctl.special.7.txt">netctl.special</a>.</p>
-<!-- more -->
-
-<p>В основі netctl закладена ідея використання профілів з ​​налаштуваннями (приклади профілів можна знайти в директорії /etc/netctl/examples/, де <a href="https://github.com/joukewitteveen/netctl/tree/master/docs/examples">представлені</a> готові файли для налаштування виділення адреси по dhcp, статичної IP, бездротового з'єднання з WEP/WPA, мережевого моста, PPPoE, PPP, бондинга, VLAN, різних тунелів і т.п.). Для наочного конфігурування безпроводових мереж передбачена спеціальна консольна утиліта wifi-menu, що здійснює налаштування у формі меню.</p>
-<p>Приклад профілю для налаштування статичного IP:</p>
-<blockquote>
-<p>Description='A basic static ethernet connection'<br />
-Interface=eth0<br />
-Connection=ethernet<br />
-IP=static<br />
-Address=('192.168.1.23/24' '192.168.1.87/24')<br />
-#Routes=('192.168.0.0/24 via 192.168.1.2')<br />
-Gateway='192.168.1.1'<br />
-DNS=('192.168.1.1')</p>
-</blockquote>
-<p>Приклад профілю для налаштування PPPoE:</p>
-<blockquote>
-<p>Description='Example PPPoE connection'<br />
-Interface=eth0<br />
-Connection=pppoe<br />
-User='example@yourprovider.com'<br />
-Password='very secret'<br />
-ConnectionMode='persist'  </p>
-</blockquote></div>
-        <hr />
-    </div>
-		
-    
- 
-        
-
  
 
     <div class='article'>
@@ -149,9 +110,10 @@ CR</a></u></strong></span><br />
 				
             <div class="pagination">
 <ul>
-    <li class="prev disabled"><a href="#">&larr; Попередня</a></li>
+    <li class="prev"><a href="http://localizator.github.io/tag/linux/.html">&larr; Попередня</a></li>
 
-    <li class="active"><a href="http://localizator.github.io/tag/arch/.html">1</a></li>
+    <li class=""><a href="http://localizator.github.io/tag/linux/.html">1</a></li>
+    <li class="active"><a href="http://localizator.github.io/tag/linux/2.html">2</a></li>
 
     <li class="next disabled"><a href="#">&rarr; Наступна</a></li>
 
