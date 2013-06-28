@@ -72,47 +72,31 @@
 
     <div class='article'>
         <div class="content-title">
-            <a href="http://localizator.github.io/2012-05-20/arch-linux-openbox-may-2012/"><h1>Arch Linux + Openbox [Травень, 2012]</h1></a>
-            <span class="article-date">20 травня 2012</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/archlinux/">archlinux</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/arch/">arch</a>, <a href="http://localizator.github.io/tag/linux/">linux</a></span> 
+            <a href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/"><h1>Другий реліз-кандидат інсталятора Debian 7.0</h1></a>
+            <span class="article-date">28 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/debian/">debian</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/wheezy/">wheezy</a>, <a href="http://localizator.github.io/tag/installer/">installer</a></span> 
         </div>
         
-        <div><div class="separator" style="clear:both;text-align:center;">
-[![][]][]
+        <div><p><a href="http://www.flickr.com/photos/localizatorua/8692289119/" target="_blank"><img alt="Debian" src="http://farm9.staticflickr.com/8536/8692289119_fbc2cb8154.jpg" /></a></p>
+<p><a href="http://lists.debian.org/debian-devel-announce/2013/04/msg00011.html">Представлений</a> другий, фінальний, кандидат в релізи <a href="http://www.debian.org/devel/debian-installer">програми встановлення</a> Debian GNU/Linux для прийдешнього випуску "Wheezy" (7.0). В даний час в Wheezy всі блокуючі реліз помилки усунуті, вихід нової версії очікується 4 або 5 травня.</p>
+<!-- more -->
 
-</div>
-
-<p><a name="more"></a></p>
-<div class="separator" style="clear:both;text-align:center;">
-[![][1]][]
-
-</div>
-
-<div class="separator" style="clear:both;text-align:center;">
-[![][2]][]
-
-</div>
-
-<p>на <strong><a href="http://localizator.deviantart.com/art/Arch-Linux-Openbox-May-2012-303466751">deviantART</a></strong>  </p>
-<p><strong>Файли налаштувань:</strong><br />
-[<strong>\~/.config/openbox/rc.xml</strong>][]<br />
-[<strong>\~/.config/openbox/menu.xml</strong>][]<br />
-[<strong>\~/.config/openbox/autostart</strong>][]<br />
-[<strong>\~/.conkyrc</strong>][]  </p>
-<p>Також можна отримати ці налаштування з GitHub:  </p>
-<pre><code>git clone git@github.com:localizator/dotfiles.git
-</code></pre>
-<p><strong>Openbox тема: </strong><span style="color:#0000ee;"><strong><u><a href="http://opendesktop.org/content/show.php/BC+WM?content=150811">BC WM
-CR</a></u></strong></span><br />
-<strong>Gtk Theme: <a href="http://goo.gl/xeBRS">Orta</a></strong><br />
-<strong>Icons: <a href="http://goo.gl/7mhZ">Feanza</a></strong><br />
-<strong>Шпалери: <a href="http://db.tt/dQogX5nk">Be Original</a></strong>  </p>
-<p><strong><a href="https://bbs.archlinux.org/viewtopic.php?pid=1104587#p1104587">Пост</a> на форумі Arch Linux</strong></p>
-</p>
-
-<p>[<img alt="" src="http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230049_1280x1024_scrot.png" />]: http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230049_1280x1024_scrot1.png
-  [<img alt="" src="http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230238_1280x1024_scrot.png" />]: http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230238_1280x1024_scrot1.png
-  [<img alt="" src="http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230956_1280x1024_scrot.png" />]: http://linuxuainfo.files.wordpress.com/2012/05/2012-05-20-230956_1280x1024_scrot1.png</p></div>
+<p>Основні зміни, у порівнянні з першим кандидатом в релізи інсталятора Debian 7.0:</p>
+<ul>
+<li>З ядра 3.4.37 портовано підсистеми drm і agp, що дозволило включити більш сучасні графічні драйвери intel, nouveau і radeon;</li>
+<li>У gdm3 реалізована базова підтримка екранного рідера Orca;</li>
+<li>Усунені проблеми з роботою текстового інсталятора;</li>
+<li>Порція поліпшень в роботі мережевого конфігуратора netcfg. Наприклад, активована одночасне встановлення пакетів iw і wireless-tools;</li>
+<li>Підготовлений образ для завантаження по мережі для armhf-архітектури vexpress, використовуваної емулятором QEMU;</li>
+<li>У пакет input-modules доданий модуль hid-topseed, а також драйвери для клавіатур і мишей з інтерфейсом USB hid-a4tech, hid-cypress, hid-ezkey, hid-kensington, hid-keytouch, hid-kye, hid-multitouch, hid -ortek, hid-primax, hid-quanta, hid-samsung, hid-speedlink;</li>
+<li>До складу пакету initramfs-tools включена серія додаткових HUD-драйверів, таким чином всі доступні в інсталяторі драйвери пристроїв введення будуть в наявності і у встановленій системі;</li>
+<li>Покращене встановлення на системи з EFI, проте ще спостерігаються проблеми із завантаженням в режимі UEFI на деяких системах;</li>
+<li>DRM_PSB замінений на DRM_GMA500, DRM_GMA600, DRM_GMA3600 і DRM_MEDFIELD;</li>
+<li>У модулі ata_piix включена підтримка госетвих систем MS Virtual PC;</li>
+<li>Доданий новий драйвер alx для пристроїв на базі чіпів Atheros AR8161 і AR8162;</li>
+<li>З ядра 3.7 перенесений драйвер iguanair (Iguanaworks USB IR Transceiver);</li>
+<li>У модуль rt2800 додана підтримка чіпсетів RT5390R.</li>
+</ul></div>
         <hr />
     </div>
 		
@@ -123,16 +107,13 @@ CR</a></u></strong></span><br />
  
 
     <div class='article'>
-        <a href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/"><h2>Другий реліз-кандидат інсталятора Debian 7.0</h2></a>
-        <div class= "well small"> <span class="article-date">28 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/debian/">debian</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/wheezy/">wheezy</a>, <a href="http://localizator.github.io/tag/installer/">installer</a></span> </div>
-        <div class="summary"><p><a href="http://www.flickr.com/photos/localizatorua/8692289119/" target="_blank"><img alt="Debian" src="http://farm9.staticflickr.com/8536/8692289119_fbc2cb8154.jpg" /></a></p>
-<p><a href="http://lists.debian.org/debian-devel-announce/2013/04/msg00011.html">Представлений</a> другий, фінальний, кандидат в релізи <a href="http://www.debian.org/devel/debian-installer">програми встановлення</a> Debian GNU/Linux для прийдешнього випуску "Wheezy" (7.0). В даний час в Wheezy всі блокуючі реліз помилки усунуті, вихід нової версії очікується 4 або 5 травня.</p>
-<!-- more -->
-
-<p>Основні зміни, у порівнянні з першим кандидатом в релізи інсталятора Debian 7.0:</p>
-<ul>
-<li>З ядра ...</li></ul></!--> <a class="btn btn-info xsmall" href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/">Читати далі &rarr;</a></div>
+        <a href="http://localizator.github.io/2013-05-06/interesting-links-june-2013/"><h2>Цікаві посилання. Червень 2013</h2></a>
+        <div class= "well small"> <span class="article-date">6 травня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/linux/">linux</a></span> </div>
+        <div class="summary"><ul>
+<li>Відбувся випуск KDE 4.11 Beta 2 http://www.phoronix.com/scan.php?page=news_item&amp;px=MTM5ODM</li>
+<li>AMD HD 7000 "RadeonSI" запустили на Fedora 19 http://www.phoronix.com/scan.php?page=news_item&amp;px=MTM5Nzg</li>
+<li>Для exFAT буде підготовлено нативний модуль ядра http://www.phoronix.com/scan.php?page=news_item ...</li></ul> <a class="btn btn-info xsmall" href="http://localizator.github.io/2013-05-06/interesting-links-june-2013/">Читати далі &rarr;</a></div>
     </div>	
 				
     
@@ -228,16 +209,16 @@ CR</a></u></strong></span><br />
                 </li>
                 
                 <ul>
-                                <li class="tag-6"><a href="/tag/arch/">arch</a></li>
+                                <li class="tag-1"><a href="/tag/linux/">linux</a></li>
+                                <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
+                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
                                 <li class="tag-10"><a href="/tag/installer/">installer</a></li>
-                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
-                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
+                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
                                 <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
                                 <li class="tag-10"><a href="/tag/nano/">nano</a></li>
-                                <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
-                                <li class="tag-1"><a href="/tag/linux/">linux</a></li>
-                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
-                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
+                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
+                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
+                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
                             </ul>                
             </ul>
             </div>
