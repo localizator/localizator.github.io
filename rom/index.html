@@ -66,43 +66,98 @@
     <div class="row">
 
         <div class="span9">
-        
-<h1>Архів</h1>
-
-<table class="table">
-    <tbody>
-            <tr>
-        <td>30.06.2013</td>
-        <td><a href='2013-06-30/migrated-from-chrome-to-firefox/'>Мігрував з Google Chrome на Mozilla Firefox</a></td>
-        </tr>
-            <tr>
-        <td>28.06.2013</td>
-        <td><a href='2013-06-28/interesting-links-june-2013/'>Цікаві посилання. Червень 2013</a></td>
-        </tr>
-            <tr>
-        <td>28.04.2013</td>
-        <td><a href='2013-04-28/debian-installer-7-0-rc2/'>Другий реліз-кандидат інсталятора Debian 7.0</a></td>
-        </tr>
-            <tr>
-        <td>25.04.2013</td>
-        <td><a href='2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/'>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</a></td>
-        </tr>
-            <tr>
-        <td>25.04.2013</td>
-        <td><a href='2013-04-25/ubuntu-13-04-released/'>Вийшов реліз Ubuntu 13.04 Raring Ringtail</a></td>
-        </tr>
-            <tr>
-        <td>10.04.2013</td>
-        <td><a href='2013-04-10/netctl-is-now-in-core/'>netctl вже в [core]</a></td>
-        </tr>
-            <tr>
-        <td>13.01.2013</td>
-        <td><a href='2013-01-13/syntax-highlighting-on-nano/'>Підсвітка в nano</a></td>
-        </tr>
-        </tbody>
-</table>
-
-
+                
+<section id="content" class="body">    
+    <h2 class="content-title">ROM</h2>
+        <p>Видалено:
+/system/app
+YouTube_4.4.11.apk
+ubank_fly_1.3.1.apk
+Todos.apk
+NQ_Vault_ANDROID_V3_4_52_22_Fly.apk
+mobileyandex-mdpi-release.apk
+Gmail.apk
+com.google.android.apps.maps-1.apk
+flybook_catalog.apk
+Galaxy4.apk
+FaceLock.apk
+GoogleEars.apk
+NoiseField.apk
+Protips.apk
+VideoFavorites.apk</p>
+<p>/system/appbackup
+com.estrongs.android.pop-1.apk
+com.facebook.katana-2.apk
+com.ifree.coinkeeper.fly_signed.apk
+com.spb.tv.am-1.apk
+com.twitter.android-1.apk
+com.vkontakte.android-1.apk
+inTaxi.apk
+LivelyCubes_signed_442.apk
+odnoklassniki-signed-align-3.0.5-Fly.apk
+org.geometerplus.zlibrary.ui.android-2.apk
+ru.ivi.client-1.apk
+Seabirds_fly445.apk
+VCH-fly.apk</p>
+<p>Додано в /system/build.prop</p>
+<h1>MOD</h1>
+<h1>Better signal</h1>
+<p>persist.cust.tel.eons=1
+ro.config.hw_fast_dormancy=1</p>
+<h1>Better call voice quality</h1>
+<p>ro.ril.enable.amr.wideband=1</p>
+<h1>Faster Streaming</h1>
+<p>media.stagefright.enable-player=true 
+media.stagefright.enable-meta=true 
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-record=false</p>
+<h1>Better Image &amp; Audio Quality</h1>
+<p>ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.enc.jpeg.quality=100</p>
+<h1>Google DNS</h1>
+<p>net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4</p>
+<h1>Battery Life</h1>
+<p>ro.ril.power_collapse=1
+pm.sleep_mode=1
+wifi.supplicant_scan_interval=180
+ro.mot.eri.losalert.delay=1000</p>
+<h1>Frees More RAM</h1>
+<p>persist.sys.purgeable_assets=1</p>
+<h1>Not error app</h1>
+<p>ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0</p>
+<p>ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1</p>
+<h1>Enable JIT</h1>
+<p>dalvik.vm.execution-mode=int:jit</p>
+<p>dalvik.vm.verify-bytecode = false
+dalvik.vm.dexopt-flags=v=n,o=v</p>
+<h1>Network</h1>
+<p>net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960</p>
+<h1>GPU</h1>
+<p>debug.sf.hw=1
+debug.performance.tuning=1
+video.accelerate.hw=1
+debug.egl.profiler=1
+debug.egl.hw=1
+debug.composition.type=gpu</p>
+<h1>Better scrolling</h1>
+<p>windowsmgr.max_events_per_sec=150
+ro.min_pointer_dur=8
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000</p>
+<h1>Faster boot</h1>
+<p>ro.config.hw_quickpoweron=true</p>
+</section>
         </div>
         
         <div class="span3">
