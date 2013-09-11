@@ -155,16 +155,16 @@ ConnectionMode='persist'  </p>
                 </li>
                 
                 <ul>
-                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
-                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
                                 <li class="tag-10"><a href="/tag/arch/">arch</a></li>
                                 <li class="tag-10"><a href="/tag/nano/">nano</a></li>
-                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
-                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
-                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
-                                <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
                                 <li class="tag-1"><a href="/tag/linux/">linux</a></li>
+                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
+                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
+                                <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
+                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
                                 <li class="tag-10"><a href="/tag/installer/">installer</a></li>
+                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
+                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
                             </ul>                
             </ul>
             </div>
@@ -213,6 +213,26 @@ ConnectionMode='persist'  </p>
 </div> <!-- /container -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script>
+    $(document).ready(function () {
+        $(document).on("click", ".sp_button", function () {
+            spoyler(this);
+        });
+    });
+
+    function spoyler(obj) {
+        var spoil = $(obj).parent().parent(".spoil");
+        var he = spoil.find(".sp_text").innerHeight() + 60;
+
+        if (spoil.height() == 24) {
+            $(obj).text("Свернуть");
+            spoil.stop(true).animate({ height: he + "px" }, 200);
+        } else {
+            $(obj).text("Развернуть");
+            spoil.stop(true).animate({ height: 24 + "px" }, 200);
+        }
+    }
+</script>
 <script>var _gaq=[['_setAccount','UA-24257878-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
  
 </body>
