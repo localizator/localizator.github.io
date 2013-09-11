@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>localizator@notes</title>
+    <meta name="description" content="">
+    <meta name="author" content="localizator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="http://localizator.github.io/theme/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="shortcut icon" href="/favicon.ico" title="Favicon" />
+
+    <!-- Le styles -->
+    <link href="http://localizator.github.io/theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localizator.github.io/theme/css/bootstrap.min.responsive.css" rel="stylesheet">
+    <link href="http://localizator.github.io/theme/css/local.css" rel="stylesheet">
+    <link href="http://localizator.github.io/theme/css/pygments.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="navbar-inner">
+    <div class="container">
+
+         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+         </a>
+
+        <a class="brand" href="http://localizator.github.io">localizator@notes</a>
+
+        <div class="nav-collapse">
+        <ul class="nav">
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="/category/news/">Новини</a></li>
+                    <li><a href="/category/apps/">Програми</a></li>
+                    <li><a href="/category/howto/">ЯКЦЕ</a></li>
+                    
+                            <li><a href="http://localizator.github.io/about/">Про блог</a></li>
+                    <li><a href="http://localizator.github.io/rom/">ROM</a></li>
+                    <li><a href="http://localizator.github.io/services/">Послуги</a></li>
+                        </ul>
+
+         <form class="navbar-search pull-right" method="get" target="_blank" action="http://www.google.com/search">
+                    <div class="input-append">
+                        <input class="input-search" id="appendedInputButton" type="text" name="q">
+                        <button class="btn" type="submit"><i class="icon-search"></i></button>
+                    </div>
+                    <input type="hidden" name="sitesearch" value="localizator.github.com">
+                </form>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="content">
+    <div class="row">
+
+        <div class="span9">
+            <div class='article'>
+        <div class="content-title">
+            <h1>Встановлення Arch Linux з Systemd</h1>
+            <span class="article-date">26 лютого 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/archlinux/">archlinux</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/arch/">arch</a>, <a href="http://localizator.github.io/tag/linux/">linux</a></span>        </div>
+	
+        <div><p><strong>Інструкція актуальна на березень 2013.<br />
+ISO-образ який використовувався при написанні посту: archlinux-2013.03.01-dual.iso.</strong></p>
+<p>13 жовтня 2012 в історії Arch Linux відбулася досить значна
+подія - дистрибутив повністю перейшов на використання Systemd.
+Декількома місяцями раніше з інсталяційного образу був видалений
+інсталятор AIF. Таким чином, процес встановлення і
+налаштування зазнав безліч змін, про які я постараюся
+розповісти нижче. Ставити систему ми будемо повністю вручну, без
+використання спеціальних скриптів '''pacstrap''',
+<strong><em>*genfstab</em></strong><em> і
+<strong><em>*arch-chroot</em></strong></em>.
+<!-- more -->
+Відразу обмовлюся, що для установки знадобиться підключення до Інтернету.
+Чим простіше воно буде - тим краще. Ідеальним варіантом буде підключення
+через роутер в режимі route (т.е коли роутер сам підключається до
+Інтернету і роздає його по локальній мережі).</p>
+<p>Спочатку намітимо план робіт. нам знадобиться:</p>
+<ol>
+<li><a href="#prepare">Підготуватися до встановлення</a></li>
+<li><a href="#boot">Завантажитися</a></li>
+<li><a href="#net">Підняти мережу</a></li>
+<li><a href="#hdd">Підготувати жорсткий диск</a></li>
+<li><a href="#pacman">Встановити базові пакети</a></li>
+<li><a href="#chroot">Перейти в встановлювану систему</a></li>
+<li><a href="#settings">Гарненько цю систему налаштувати</a></li>
+<li><a href="#bootloader">Встановити завантажувач</a></li>
+<li><a href="#settings-after-boot">Перезавантажитися і завершити налаштування</a></li>
+<li><a href="#new-system">Вижити у встановленій системі</a></li>
+</ol>
+<h2 id="prepare">Підготовка до встановлення</h2>
+<p>Якщо хто не знає, дистрибутив лежить тут —
+<a href="http://www.archlinux.org/download/">http://www.archlinux.org/download/</a>. Завантажуйте тільки реліз, не намагайтеся
+користуватися нестабільними зрізами або будь-якими іншими збірками, якщо не готові
+самостійно вирішувати найнесподіваніші проблеми.</p>
+<p>ISO-образ найкраще записати на CD, це майже гарантовано врятує від
+косяків, які зустрічаються при спробі встановлення з флешок. Якщо
+CD-приводу немає - копіюйте дистрибутив на флешку за допомогою команди dd:</p>
+<pre><code>dd if=archlinux-2013.03.01-dual.iso of=/dev/sdX
+</code></pre>
+<p>де X - літерне позначення девайса флешки, наприклад <strong><em>*sdb</em></strong><em>.
+Номер розділу вказувати не потрібно, тільки букву. Будьте уважні!
+Помилитеся буквою - можете затерти дані на вінчестері! В цілях
+обережності <strong><em>*dd</em></strong></em> варто виконувати від користувача, а не від
+рута, якщо це дозволяють настройки вашої системи.</p>
+<h2 id="boot">Завантаження</h2>
+<p><img alt="Boot menu" src="/static/images/boot.png" />  </p>
+<p>Тут все елементарно - вставляєте флешку, вибираєте архітектуру
+і завантажуєтесь (для 32-бітових процесорів в меню буде всього 1 пункт з
+архітектурою, для 64-бітових - 2 пункти, виберіть потрібний). після завантаження
+потрапите в рутову консоль.</p>
+<p>Якщо система не завантажується, а на екрані з'являються якісь написи про
+Syslinux - перевірте, чи не підключена до комп'ютера інша флешка. Якщо
+так, її потрібно вийняти.</p>
+<p>Якщо у вас є вибір між 32 і 64-бітовим варіантом, вибирати краще
+64-бітний, тому ходять чутки про майбутнє припинення підтримки 32-бітних
+пакетів.</p>
+<p>Якщо в процесі встановлення вам знадобиться відображення кириличних
+символів, командуйте</p>
+<pre><code>setfont UniCyr_8x16
+</code></pre>
+<p>в кожному використовуваному терміналі (tty1, tty2, ...).</p>
+<h2 id="net">Підняття мережі, вихід в інтернет</h2>
+</p>
+
+<p>Тут я вам не большой помощник, потому что подключение у каждого своё. Не
+стоит бояться поднимать интернет из консоли, это не так сложно, как
+кажется. Читайте до ~~посинения~~ просветления <a href="https://wiki.archlinux.org/">wiki.archlinux.org</a>
+или меня: <a href="http://lampslave.ru/pppoe-archlinux/" title="PPPoE в Arch Linux">PPPoE в Arch Linux</a>, <a href="http://lampslave.ru/3g-modem-archlinux/" title="3G модем в Arch Linux">3G модем в Arch Linux</a>.</p>
+</p>
+
+<p>Если же у вас упомянутый выше «идеальный вариант» или установка вообще
+идёт в VirtualBox, можете вздохнуть с облегчением, потому что в этом
+случае сеть поднимается сама и наверняка уже готова к использованию.</p>
+</p>
+
+<h2 id="hdd">Подготовка жёсткого диска</h2>
+</p>
+
+<p>На первый раз очень рекомендую вам поставить Арч на один раздел. Даже
+место под swap в общем-то не обязательно выделять, если железо
+достаточно мощное. За всё время использования Арча подкачка у меня
+работала один или два раза, при том, что у меня всего 2Гб оперативки.</p>
+</p>
+
+<p>Будем считать добавление swap-раздела «домашней работой». Если решили её
+выполнить, не забудьте оставить место на диске и прописать swap в
+<kbd>/etc/fstab</kbd> (к его редактированию мы обратимся, когда будем
+настраивать уже установленную систему).</p>
+</p>
+
+<h3>Разметка</h3>
+</p>
+
+<p>Процесс разметки описан в отдельной статье «<a href="http://lampslave.ru/use-fdisk-luke/" title="Разметка жёсткого диска с использованием fdisk">Разметка жёсткого диска с
+использованием fdisk</a>».</p>
+</p>
+
+<p><strong>Хочу заметить, что создавать отдельный раздел <kbd>/boot</kbd>, как
+иногда советуют в Wiki, глупо и вредно. Не делайте этого, если не хотите
+проблем с загрузкой системы.</strong></p>
+</p>
+
+<p>Конечно, здесь могут быть исключения, но они касаются только тех, кто
+реально отдаёт себе отчёт в том, зачем ему нужен отдельный
+<kbd>/boot</kbd> и может самостоятельно разобраться с соответствующими
+настройками.</p>
+</p>
+
+<h3>Форматирование</h3>
+</p>
+
+<p>Разметить диск мало, надо ещё создать на нём файловую систему. Сам я
+использую везде <kbd>ext4</kbd>, поэтому команду приведу для неё.
+Команды для создания других файловых систем и swap-а ищите в Wiki (а
+лучше просто напишите в консоли <kbd>mk</kbd> и пару раз нажмите
+<kbd>Tab</kbd>, по предлагаемым вариантам сами всё поймёте).</p>
+</p>
+
+<p>Итак, для форматирования первого (и, в нашем случае, единственного)
+раздела пишем:</p>
+<p></p>
+<p>
+    mkfs.ext4 -c /dev/sda1</p>
+</p>
+
+<p>Параметр <kbd>-c</kbd> заставить систему проверить раздел на сбойные
+сектора. Это особенно актуально, если диск не первой свежести, хотя,
+конечно, можно ничего и не проверять.</p>
+</p>
+
+<h2 id="pacman">Установка базовых пакетов</h2>
+</p>
+
+<h3>Монтирование раздела и создание директорий</h3>
+</p>
+
+<p>[<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/mkdir-300x166.png" title="Монтирование раздела и создание основных директорий" />][] Перед тем как ставить пакеты, нам нужно смонтировать в
+директорию <kbd>/mnt</kbd> только что созданный раздел и создать на нём
+основные директории.</p>
+</p>
+
+<p>Монтирование и создание директорий делается при помощи команд:</p>
+<p></p>
+<p>
+    mount /dev/sda1 /mntmkdir -p /mnt/{dev,proc,sys,run,tmp,etc}mkdir -p /mnt/var/lib/pacman</p>
+</p>
+
+<p>А проверить результат можно командой:</p>
+<p></p>
+<p>
+    ls /mnt</p>
+</p>
+
+<h3>Выбор зеркала</h3>
+</p>
+
+<p>[<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/mirrors-300x166.png" title="Зеркало Яндекса в файле /etc/pacman.d/mirrorlist" />][] Теперь нам нужно выбрать зеркало, с которого будут
+загружаться пакеты. Пишем:</p>
+<p></p>
+<p>
+    vi /etc/pacman.d/mirrorlist</p>
+</p>
+
+<p>и оставляем в файле только один адрес. Я пользуюсь зеркалом Яндекса, ну
+а вы выбирайте по вкусу.</p>
+</p>
+
+<p>Если не умеете пользоваться <kbd>vi</kbd>, ~~то вы сами себе злобные
+Буратины~~ можете попробовать <kbd>nano</kbd>, он намного проще.</p>
+</p>
+
+<p>Или, что ещё удобнее, можно просто записать нужное зеркало через
+<kbd>echo</kbd>, примерно так:</p>
+<p></p>
+<p>
+    echo 'Server = http://mirror.yandex.ru/archlinux/$repo/os/$arch' &gt;&gt; /etc/pacman.d/mirrorlist</p>
+</p>
+
+<h3>Загрузка пакетов</h3>
+</p>
+
+<p>Команды для установки пакетов при инсталляции дистрибутива отличаются от
+обычных только тем, что пакетному менеджеру дополнительно указывается
+корневая директория устанавливаемого дистрибутива. Мы её, если помните,
+смонтировали в <kbd>/mnt</kbd>.</p>
+</p>
+
+<p>[<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/pacman1-300x166.png" title="Установка базовых пакетов" />][] Сначала нам нужно обновить нашу базу данных с информацией о
+пакетах:</p>
+<p></p>
+<p>
+    pacman -r /mnt -Sy</p>
+</p>
+
+<p>После этого можно загружать и устанавливать любые пакеты.
+<strong>Обязательными для установки являются базовые пакеты и загрузчик</strong>
+(os-prober нужен для автоматического обнаружения систем на других
+разделах):</p>
+<p></p>
+<p>
+    pacman -r /mnt -S base grub-bios os-prober</p>
+</p>
+
+<p>В принципе, на этом этапе можно установить любые пакеты: хоть файловый
+менеджер Midnight Commander, хоть погодный информер для KDE. Однако, я
+рекомендую ограничиться минимальным набором пакетов, т.к. не исключено,
+что в процессе дальнейшей установки вы что-нибудь сломаете и будете всё
+устанавливать заново.</p>
+</p>
+
+<p><strong>Внимание! При загрузке пакетов убедитесь, что вы устанавливаете всё
+необходимое, чтобы иметь возможность поднять интернет из устанавливаемой
+системы.</strong> Особенно это касается тех, кто использует «сложные» методы
+подключения (VPN, Wi-Fi, USB-модемы) или скрипты для автоматической
+настройки сети, такие как <kbd>pptpsetup</kbd>.</p>
+</p>
+
+<h2 id="chroot">Переключение в устанавливаемую систему</h2>
+</p>
+
+<p>[<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/chroot-300x166.png" title="Подготовка и переключение в устанавливаемую систему" />][] После установки пакетов нам предстоит переключиться в
+устанавливаемую систему, чтобы сделать некоторые настройки
+непосредственно из неё. Но, так как эта система у нас, можно сказать,
+«новорожденная», нам придётся сначала прикрутить к ней «органы чувств»
+той системы, в который мы сейчас работаем.</p>
+</p>
+
+<p>Для этого «биндим» (это особый вид монтирования) нужные директории:</p>
+<p></p>
+<p>
+    mount --bind /dev /mnt/devmount --bind /proc /mnt/procmount --bind /sys /mnt/sys</p>
+</p>
+
+<p>После этого можно переключаться:</p>
+<p></p>
+<p>
+    chroot /mnt bash</p>
+</p>
+
+<p><strong>Внимание! Дальнейшие действия производятся в устанавливаемой системе!
+Выходить из chroot нужно будет только после завершения всех настроек —
+для перезагрузки!</strong></p>
+</p>
+
+<h2 id="settings">Настройка</h2>
+</p>
+
+<p><strong>Внимание! Если какого-либо конфигурационного файла нет, и не написано,
+что он генерируется определённой командой, его надо создать.</strong> Делать
+это при помощи <kbd>touch</kbd> не обязательно, достаточно просто
+запустить текстовый редактор, указав путь и имя файла, а потом
+отредактировать и сохранить.</p>
+</p>
+
+<h3>Настройка /etc/rc.conf</h3>
+</p>
+
+<p><strong>Никакого /etc/rc.conf в системе теперь быть не должно!</strong> Я не зря
+оставил этот пункт, потому что начитавшись других мануалов вы можете
+впасть в заблуждение и начать его искать.</p>
+</p>
+
+<h3>Настройка имени хоста</h3>
+</p>
+
+<p>Открываем <kbd>/etc/hostname</kbd>, пишем туда имя хоста, например
+<kbd>myhost</kbd> или <kbd>arch</kbd>.</p>
+</p>
+
+<h3>Настройка локали</h3>
+</p>
+
+<p>Открываем файл <kbd>/etc/locale.gen</kbd> и стираем решетку перед
+локалью <kbd>ru_RU.UTF-8 UTF-8</kbd>.</p>
+</p>
+
+<p>Запускаем генератор локалей:</p>
+<p></p>
+<p>
+    locale-gen</p>
+</p>
+
+<p>Теперь открываем файл <kbd>/etc/locale.conf</kbd> и пишем туда
+следующее:</p>
+<p></p>
+<p>
+    LANG=ru_RU.UTF-8LC_MESSAGES=ru_RU.UTF-8LC_COLLATE=C</p>
+</p>
+
+<p>Не пугайтесь, если введя после этого команду <kbd>locale</kbd> вы не
+увидите изменений. Так и должно быть.</p>
+</p>
+
+<h3>Настройки виртуальной консоли</h3>
+</p>
+
+<p>Открываем файл <kbd>/etc/vconsole.conf</kbd> и пишем туда:</p>
+<p></p>
+<p>
+    KEYMAP=usFONT=UniCyr_8x16</p>
+</p>
+
+<p>В принципе, параметр <kbd>KEYMAP</kbd> для английской раскладки можно не
+задавать, а вот наличие указанного шрифта в
+<kbd>/usr/share/kbd/consolefonts</kbd> лучше проверить.</p>
+</p>
+
+<h3>Настройка времени</h3>
+</p>
+
+<p>Генерируем файл <kbd>/etc/adjtime</kbd>:</p>
+<p></p>
+<p>
+    hwclock -w --localtime</p>
+</p>
+
+<p><kbd>localtime</kbd> указывается для совместимости с Windows, про
+использование UTC читайте в Wiki.</p>
+</p>
+
+<p>Указываем свой часовой пояс:</p>
+<p></p>
+<p>
+    ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime</p>
+</p>
+
+<p>Если у вас другой часовой пояс — ищите свой файл в
+<kbd>/usr/share/zoneinfo/</kbd> и командуйте аналогичным образом.</p>
+</p>
+
+<h3>Настройка автомонтирования</h3>
+</p>
+
+<p>Теперь нам необходимо открыть файл <kbd>/etc/fstab</kbd> и прописать
+туда наш корневой раздел, иначе система не сможет загрузиться. Указать
+на нужный раздел можно несколькими способами (подробности в Wiki), я
+выбрал самый простой — по имени девайса:</p>
+<p></p>
+<p>
+    /dev/sda1 / ext4 defaults 0 1</p>
+</p>
+
+<h3 id="initramfs">Генерация initramfs</h3>
+</p>
+
+<p>Теперь переходим к настоящему (но очень простому) шаманству. Пишем
+команды:</p>
+<p></p>
+<p>
+    export LANG=ru_RU.UTF-8mkinitcpio -p linux</p>
+</p>
+
+<p>Не буду грузить вас подробностями про <a href="http://ru.wikipedia.org/wiki/Initrd">initrd</a> (потому что я их и сам
+не знаю), скажу только, что без выполнения приведённой выше команды ваша
+новая система загружаться не сможет, так что следите за опечатками.</p>
+</p>
+
+<h2 id="bootloader">Установка загрузчика</h2>
+</p>
+
+<p>Тут всё предельно просто. Ставим загрузчик:</p>
+<p></p>
+<p>
+    grub-install /dev/sda</p>
+</p>
+
+<p>и запускаем автоматическую настройку:</p>
+<p></p>
+<p>
+    grub-mkconfig -o /boot/grub/grub.cfg</p>
+</p>
+
+<p>Если вы не сделали чего-нибудь эдакого — всё заработает самостоятельно и
+без ошибок.</p>
+</p>
+
+<p>В мартовской сборке 2013 года, по всей видимости, есть какой-то косяк с
+lvm, поэтому в случае возникновения ошибок при выполнении
+<kbd>grub-mkconfig</kbd> нужно удалить пакет <kbd>lvm2</kbd> и выполнить
+команду автонастройки повторно.</p>
+</p>
+
+<h2 id="settings-after-boot">Перезагрузка и завершение настройки</h2>
+</p>
+
+<p>После этого нужно ещё раз проверить правильность всех настроек, выйти из
+устанавливаемой системы и перезагрузиться:</p>
+<p></p>
+<p>
+    exitreboot</p>
+</p>
+
+<h2 id="new-system">Жизнь в новой системе</h2>
+</p>
+
+<p>Если установленная система смогла загрузиться, значит всё в порядке —
+базовая система у нас теперь есть.  </p>
+<p>Теперь можно заняться конфигурацией системы и установкой дополнительных
+пакетов: иксов, драйверов, всяческих «кед», «гномов» и прочего.
+Проделать это вам предстоит самостоятельно, приведу лишь несколько
+полезных ссылок и указаний.</p>
+</p>
+
+<h3>Снова поднимаем сеть</h3>
+</p>
+
+<p>Для начала нужно будет проверить, как себя чувствует наша сеть:</p>
+<p></p>
+<p>
+    ip addr</p>
+</p>
+
+<p>Если в выдаче вы увидите только lo-интерфейс, придётся немного
+покрасноглазить. С некоторых пор systemd взял именование сетевых
+интерфейсов в свои руки, и, по своей любимой привычке, сделал всё «не
+как у людей». Почему так, написано здесь:
+<a href="http://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames">http://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames</a>.
+Наша задача — выяснить, как же теперь называется наш старый добрый eth0.
+Для этого ищем интерфейс вида <kbd>enp4s1</kbd> в выдаче</p>
+<p></p>
+<p>
+    ip link</p>
+</p>
+
+<p>После счастливого обретения имени интерфейса запускаем на нём dhcp:</p>
+<p></p>
+<p>
+    systemctl start dhcpcd@enp4s1.service</p>
+</p>
+
+<p>и добавляем всё это в автозагрузку:</p>
+<p></p>
+<p>
+    systemctl enable dhcpcd@enp4s1.service</p>
+</p>
+
+<h3>Выключаем проверку ключей</h3>
+</p>
+
+<p>Начиная с 4 версии pacman по умолчанию проверяет подписи для всех
+пакетов. Обработка подписей требует настойки, подробности здесь:
+<a href="https://wiki.archlinux.org/index.php/Pacman-key">https://wiki.archlinux.org/index.php/Pacman-key</a>. Особое внимание
+следует уделить созданию достаточного количества энтропии для генерации
+ключей:
+<a href="https://wiki.archlinux.org/index.php/Pacman-key#Initializing_the_keyring">https://wiki.archlinux.org/index.php/Pacman-key#Initializing_the_keyring</a>.</p>
+</p>
+
+<p>При активном использовании AUR проверка ключей особого смысла не имеет
+(и вообще мне лень с ними возиться <img alt=":roll:" src="http://lampslave.ru/wp-includes/images/smilies/icon_rolleyes.gif" /> ), поэтому я предпочитаю
+её отключать. Делается это следующим образом: в файле
+<kbd>/etc/pacman.conf</kbd> для каждого репозитория нужно поставить:</p>
+<p></p>
+<p>
+    SigLevel = Never</p>
+</p>
+
+<p>Теперь нужно раскомментировать зеркало в
+<kbd>/etc/pacman.d/mirrorlist</kbd> и радоваться жизни.</p>
+</p>
+
+<h3>Создаём пользователя</h3>
+</p>
+
+<p>Удобный скрипт <kbd>adduser</kbd> в базовой системе не нашелся (его
+почему-то дропнули в AUR), поэтому используем Ъ-метод:</p>
+<pre><code>useradd -m -g users -s /bin/bash имя_пользователяpasswd имя_пользователя
+</code></pre>
+<p>На этом пока всё. Оставляйте заявки на дополнение статьи нужной вам
+информацией, но сразу скажу, что переписывать Wiki не собираюсь (хотя по
+факту именно это и происходит <img alt=":(" src="http://lampslave.ru/wp-includes/images/smilies/icon_sad.gif" /> ).</p>
+<p>[<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/boot-menu-300x225.png" title="Загрузочное меню Arch Linux" />]: http://lampslave.ru/wp-content/uploads/2012/07/boot-menu.png
+  [<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/mkdir-300x166.png" title="Монтирование раздела и создание основных директорий" />]: http://lampslave.ru/wp-content/uploads/2012/07/mkdir.png
+  [<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/mirrors-300x166.png" title="Зеркало Яндекса в файле /etc/pacman.d/mirrorlist" />]: http://lampslave.ru/wp-content/uploads/2012/07/mirrors.png
+  [<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/pacman1-300x166.png" title="Установка базовых пакетов" />]: http://lampslave.ru/wp-content/uploads/2012/07/pacman1.png
+  [<img alt="" src="http://lampslave.ru/wp-content/uploads/2012/07/chroot-300x166.png" title="Подготовка и переключение в устанавливаемую систему" />]: http://lampslave.ru/wp-content/uploads/2012/07/chroot.png</p></div>
+	
+        <hr>
+    	   
+        <h2>Коментарі</h2>
+	<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="localizator">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'localizatorblog'; 
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+        </div>
+        
+        <div class="span3">
+
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                ДИВІТЬСЯ ТАКОЖ
+                </li>
+            
+                <li><a href="http://localizator.github.io/archives.html">Архів тем</a>
+                <li><a href="http://localizator.github.io/tags.html">Теги</a>
+                                <li><a href="http://feeds.feedburner.com/localizatornotes" rel="alternate">RSS</a></li>
+                            </ul>
+            </div>
+
+
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                РОЗДІЛИ
+                </li>
+                
+                                <li><a href="http://localizator.github.io/category/apps/">apps</a></li>
+                                <li><a href="http://localizator.github.io/category/archlinux/">archlinux</a></li>
+                                <li><a href="http://localizator.github.io/category/howto/">howto</a></li>
+                                <li><a href="http://localizator.github.io/category/news/">news</a></li>
+                                   
+            </ul>
+            </div>
+            
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                ТЕГИ
+                </li>
+                
+                <ul>
+                                <li class="tag-6"><a href="/tag/arch/">arch</a></li>
+                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
+                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
+                                <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
+                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
+                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
+                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
+                                <li class="tag-1"><a href="/tag/linux/">linux</a></li>
+                                <li class="tag-10"><a href="/tag/nano/">nano</a></li>
+                                <li class="tag-10"><a href="/tag/installer/">installer</a></li>
+                            </ul>                
+            </ul>
+            </div>
+            
+                        <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                ПОСИЛАННЯ
+                </li>
+            
+                            <li><a href="http://www.archlinux.org/">Arch Linux</a></li>
+                            <li><a href="http://www.gentoo.org/">Gentoo</a></li>
+                            <li><a href="http://linux.org.ua/">LOU</a></li>
+                            <li><a href="http://www.fsf.org/">FSF</a></li>
+                            <li><a href="http://distrowatch.com/">DistroWatch</a></li>
+                            <li><a href="http://www.gnu.org/">GNU</a></li>
+                        </ul>
+            </div>
+            
+
+                        <div class="social">
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                СОЦІАЛЬНІ МЕРЕЖІ
+                </li>
+           
+                                <li><a href="https://plus.google.com/100150336880202859563">Google+</a></li>
+                                <li><a href="http://twitter.com/localizator">Twitter</a></li>
+                                <li><a href="http://github.com/localizator">GitHub</a></li>
+                                <li><a href="https://bitbucket.org/localizator">Bitbucket</a></li>
+                            </ul>
+            </div>
+            </div>
+            
+        </div>  
+    </div>     </div> 
+<footer class="copyright">
+</br>
+<p>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk"><img style="border: 0px none; padding-bottom: 3px; vertical-align: middle;" alt="Ліцензія Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a> «<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">localizator@notes</span>», <a xmlns:cc="http://creativecommons.org/ns#" href="http://localizator.github.io" property="cc:attributionName" rel="cc:attributionURL">localizator</a>, ліцензія <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.uk">CCA 3.0 Unported License</a>.
+<span style="margin-left: 30px;"> Працює на <a href="http://docs.getpelican.com/">Pelican</a>. Шаблон від <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.</span>
+</p>
+</footer>
+
+</div> <!-- /container -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+<script>var _gaq=[['_setAccount','UA-24257878-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+ 
+</body>
+</html>
