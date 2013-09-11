@@ -71,10 +71,10 @@
     <h2 class="content-title">ROM</h2>
         <p><strong>Власні збірки прошивок Fly IQ445</strong></p>
 <p><strong><a href="#cwm">V14+ROOT</a></strong><br />
-<strong><a href="#v14_rcwm">V14+ROOT+CWM</a></strong></p>
+<strong>[V14+ROOT+CWM][]</strong></p>
 <h2 id="cwm"><strong>V14 + ROOT</strong> (CWM recovery)</h2>
-<p><strong><a href="#uk_14rcwm">На українській</a></strong><br />
-<strong><a href="#ru_14rcwm">На русском</a></strong></p>
+<p><strong><a href="#uk_cwm">На українській</a></strong><br />
+<strong><a href="#ru_cwm">На русском</a></strong></p>
 <h2 id="uk_cwm"><strong>Про прошивку</strong></h2>
 <p><strong>ОФІЦІЙНА ПРОШИВКА V14 + ROOT.</strong><br />
 Для встановлення через <strong>CWM recovery</strong></p>
@@ -93,115 +93,6 @@
 4) Сделан root  </p>
 <p><strong>Скачать</strong><br />
 <a href="http://db.tt/XYq8rJlL" target="_blank">rom_mod.zip</a> (~213.97 MB)  </p>
-<h2 id="v14_rcwm"><strong>V14 + ROOT + CWM</strong> (Flash Tool)</h2>
-<p><strong><a href="#uk_14rcwm">На українській</a></strong><br />
-<strong><a href="#ru_14rcwm">На русском</a></strong></p>
-<h2 id="uk_14rcwm"><strong>Про прошивку</strong></h2>
-<p><strong>ПОЛЕГШЕНА ОФІЦІЙНА ПРОШИВКА V14 + ROOT + CWM.</strong><br />
-Для встановлення через <strong>Flash Tool</strong></p>
-<p><strong>Зміни</strong><br />
-1) Вилучений майже весь сторонній софт<br />
-2) Індикатор батареї з відсотками<br />
-3) Замінено клавіатуру на Hacker`s Keyboard<br />
-4) Вшитий root<br />
-5) Після прошивки буде CWM recovery  </p>
-<p><strong>Видалено:</strong><br />
-Все що було видалено з заводської прошивки <a href="http://db.tt/XYq8rJlL" target="_blank">removed.md</a></p>
-<p><strong>Оптимізація <a href="#build_prop">build.prop</a></strong></p>
-<p><strong>Скріншоти</strong><br />
-<img alt="" src="http://i.imgur.com/oSmh3h7l.png" /></p>
-<p><strong>Завантажити</strong><br />
-<a href="http://db.tt/XYq8rJlL" target="_blank">rom_mod.zip</a> (~213.97 MB)</p>
-<h2 id="ru_14rcwm"><strong>О прошивке</strong></h2>
-<p><strong>ОБЛЕГЧЕННАЯ ОФИЦИАЛЬНАЯ ПРОШИВКА V14 + ROOT + CWM</strong>.<br />
-Для установки через <strong>Flash Tool</strong></p>
-<p><strong>Изменения:</strong><br />
-1) Удален почти весь сторонний софт<br />
-2) Индикатор батареи с процентами<br />
-3) Заменена клавиатура на Hacker`s Keyboard<br />
-4) Сделан root<br />
-5) После прошивки будет CWM recovery  </p>
-<p><strong>Удалено:</strong><br />
-Все что было удалено из заводской прошивки <a href="http://db.tt/XYq8rJlL" target="_blank">removed.md</a></p>
-<p><strong>Твики <a href="#build_prop">build.prop</a></strong></p>
-<p><strong>Скриншоты</strong><br />
-<img alt="" src="http://i.imgur.com/oSmh3h7l.png" /></p>
-<p><strong>Скачать</strong><br />
-<a href="http://db.tt/XYq8rJlL" target="_blank">rom_mod.zip</a> (~213.97 MB)  </p>
-<h2 id="build_prop">/system/build.prop</h2>
-<pre><code># MOD
-
-# Better signal
-persist.cust.tel.eons=1
-ro.config.hw_fast_dormancy=1
-
-# Better call voice quality
-ro.ril.enable.amr.wideband=1
-
-# Faster Streaming
-media.stagefright.enable-player=true 
-media.stagefright.enable-meta=true 
-media.stagefright.enable-scan=true
-media.stagefright.enable-http=true
-media.stagefright.enable-record=false
-
-# Better Image &amp; Audio Quality
-ro.media.dec.jpeg.memcap=8000000
-ro.media.enc.hprof.vid.bps=8000000
-ro.media.enc.jpeg.quality=100
-
-# Google DNS
-net.ppp0.dns1=8.8.8.8
-net.ppp0.dns2=8.8.4.4
-net.dns1=8.8.8.8
-net.dns2=8.8.4.4
-
-# Battery Life
-ro.ril.power_collapse=1
-pm.sleep_mode=1
-wifi.supplicant_scan_interval=180
-ro.mot.eri.losalert.delay=1000
-
-# Frees More RAM
-persist.sys.purgeable_assets=1
-
-# Not error app
-ro.kernel.android.checkjni=0
-ro.kernel.checkjni=0
-
-ro.media.dec.aud.wma.enabled=1
-ro.media.dec.vid.wmv.enabled=1
-
-# Enable JIT
-dalvik.vm.execution-mode=int:jit
-
-dalvik.vm.verify-bytecode = false
-dalvik.vm.dexopt-flags=v=n,o=v
-
-# Network
-net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960
-net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960
-net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960
-
-# GPU
-debug.sf.hw=1
-debug.performance.tuning=1
-video.accelerate.hw=1
-debug.egl.profiler=1
-debug.egl.hw=1
-debug.composition.type=gpu
-
-# Better scrolling
-windowsmgr.max_events_per_sec=150
-ro.min_pointer_dur=8
-ro.max.fling_velocity=12000
-ro.min.fling_velocity=8000
-
-# Faster boot
-ro.config.hw_quickpoweron=true
-</code></pre>
 </section>
         </div>
         
@@ -241,16 +132,16 @@ ro.config.hw_quickpoweron=true
                 </li>
                 
                 <ul>
-                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
-                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
+                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
                                 <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
-                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
-                                <li class="tag-10"><a href="/tag/nano/">nano</a></li>
                                 <li class="tag-10"><a href="/tag/installer/">installer</a></li>
                                 <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
-                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
-                                <li class="tag-1"><a href="/tag/linux/">linux</a></li>
                                 <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
+                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
+                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
+                                <li class="tag-1"><a href="/tag/linux/">linux</a></li>
+                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
+                                <li class="tag-10"><a href="/tag/nano/">nano</a></li>
                             </ul>                
             </ul>
             </div>
