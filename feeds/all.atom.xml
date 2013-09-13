@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/all.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-09-13T00:00:00+03:00</updated><entry><title>Twitter 5.0 beta для Android з абсолютно новим інтерфейсом</title><link href="http://localizator.github.io/2013-09-13/twitter-5-0-beta/" rel="alternate"></link><updated>2013-09-13T00:00:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-09-13:2013-09-13/twitter-5-0-beta/</id><summary type="html">&lt;p&gt;Тестерам стала доступна бета-версія наступної мажорної гілки офіційного клієнта Twitter для Android. Судячи з усього, в п'ятій версії свого додатку у Twitter вирішили взагалі закреслити той інтерфейс, який вони вилизували останні роки, і почати все з чистого аркуша.
 &lt;!-- more --&gt;
-Найбільшим зміною є переосмислення інтерфейсу в стилі Holo.&lt;/p&gt;
+Найбільшою зміною є переосмислення інтерфейсу в стилі Holo.&lt;/p&gt;
 &lt;p&gt;Замість старих трьох вкладок тепер доступні наступні: Home, Notifications, Messages, Activity, Trending, Find people і Me. Між вкладками можна перемикатися свайпами або тапами по навігаційній панелі.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-01-32-51.png" /&gt;  &lt;/p&gt;
 &lt;p&gt;&lt;img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-01-33-02.png" /&gt;&lt;/p&gt;
