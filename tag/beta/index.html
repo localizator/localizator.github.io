@@ -73,66 +73,23 @@
 
     <div class='article'>
         <div class="content-title">
-            <a href="http://localizator.github.io/2013-01-13/syntax-highlighting-on-nano/"><h1>Підсвітка в nano</h1></a>
-            <span class="article-date">13 січня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/howto/">howto</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/nano/">nano</a>, <a href="http://localizator.github.io/tag/linux/">linux</a></span> 
+            <a href="http://localizator.github.io/2013-09-13/twitter-5-0-beta/"><h1>Twitter 5.0 beta для Android з абсолютно новим інтерфейсом</h1></a>
+            <span class="article-date">13 вересня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/twitter/">twitter</a>, <a href="http://localizator.github.io/tag/beta/">beta</a></span> 
         </div>
         
-        <div><p><img alt="nano logo" src="http://i.imgur.com/ptRfh.png" /></p>
-<p>Всім відомий простий текстовий редактор nano. Він поставляється як редактор за замовчуванням у більшості дистрибутивів linux і має величезну кількість користувачів, мабуть, більше, ніж будь-який інший редактор. Але найчастіше в ньому не вистачає однієї приємної дрібниці - підсвічування синтаксису. Втім, це можна легко і швидко виправити.
+        <div><p>Тестерам стала доступна бета-версія наступної мажорної гілки офіційного клієнта Twitter для Android. Судячи з усього, в п'ятій версії свого додатку у Twitter вирішили взагалі закреслити той інтерфейс, який вони вилизували останні роки, і почати все з чистого аркуша.
 <!-- more -->
-Шаблони з різним підсвічуванням знаходяться за шляхом /usr/share/nano. Що там вдасться знайти?</p>
-<pre><code>:::sh
-ls /usr/share/nano
-
-asm.nanorc
-awk.nanorc
-c.nanorc
-cmake.nanorc
-css.nanorc
-debian.nanorc
-fortran.nanorc
-gentoo.nanorc
-groff.nanorc
-html.nanorc
-java.nanorc
-makefile.nanorc
-man-html/
-man.nanorc
-mgp.nanorc
-mutt.nanorc
-nanorc.nanorc
-objc.nanorc
-ocaml.nanorc
-patch.nanorc
-perl.nanorc
-php.nanorc
-pov.nanorc
-python.nanorc
-ruby.nanorc
-sh.nanorc
-tcl.nanorc
-tex.nanorc
-xml.nanorc
-</code></pre>
-<p>Отже, в нашому розпорядженні підсвічування мов програмування c, python, php і java. Можна розфарбувати html і css файли і дещо ще. Не так вже багато, але для справ насущних повинно вистачити.
-Справа за малим: створити файл .nanorc в домашній директорії і включити в нього необхідні стилі. Це може виглядати так:</p>
-<pre><code>:::sh
-cat ~/.nanorc
-
-include /usr/share/nano/makefile.nanorc
-include /usr/share/nano/python.nanorc
-include /usr/share/nano/xml.nanorc
-include /usr/share/nano/sh.nanorc
-include /usr/share/nano/cmake.nanorc
-include /usr/share/nano/css.nanorc
-include /usr/share/nano/html.nanorc
-include /usr/share/nano/patch.nanorc
-include /usr/share/nano/php.nanorc
-</code></pre>
-<p>Тепер подивимося як відображається файл з одним із влюченних шаблонів.</p>
-<p><img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /></p>
-<p>Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.</p></div>
+Найбільшим зміною є переосмислення інтерфейсу в стилі Holo.</p>
+<p>Замість старих трьох вкладок тепер доступні наступні: Home, Notifications, Messages, Activity, Trending, Find people і Me. Між вкладками можна перемикатися свайпами або тапами по навігаційній панелі.</p>
+<p><img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-01-32-51.png" />  </p>
+<p><img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-01-33-02.png" /></p>
+<p>У самій стрічці стало доступно попередній перегляд зображень і відео. </p>
+<p>Зліва виїжджає додаткова панель. Тут можна відсортувати вкладки в зручному порядку, переключитися між акаунтами і дістатися до налаштувань. Налаштування майже не змінилися. Але уважне око зачепиться за два нових пункти. Перший - галочка включення превю зображень і відео в стрічці. Другий - пункт «Безпека» у налаштуваннях облікового запису. Тут можна активувати можливість захистити свій аккаунт прив'язкою до даного пристрою.</p>
+<p><img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-18-11-14.png" />  </p>
+<p><img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-18-22-56.png" /></p>
+<p>У цілому можу описати свої враження як неоднозначні. З одного боку нова навігація злегка незграбна, а бічну панель хотілося б відкривати свайпом в самому лівому екрані, а не цілитися пальцем у маленьку кнопочку. З іншого - радує, що Twitter під Android володіє своїм характером і прагне використовувати максимум можливостей платформи, а також маленькими, але впевненим кроками додає функціональність, на яку раніше можна було розраховувати тільки в сторонніх клієнтах.</p>
+<p>Кортить спробувати новий Твіттер в дії? Тримайте посилання на apk: <a href="http://db.tt/Sq0RDLfy" target="_blank">посилання</a>.</p></div>
         <hr />
     </div>
 		
@@ -140,7 +97,7 @@ include /usr/share/nano/php.nanorc
 <ul>
     <li class="prev disabled"><a href="#">&larr; Попередня</a></li>
 
-    <li class="active"><a href="http://localizator.github.io/tag/nano/.html">1</a></li>
+    <li class="active"><a href="http://localizator.github.io/tag/beta/.html">1</a></li>
 
     <li class="next disabled"><a href="#">&rarr; Наступна</a></li>
 
