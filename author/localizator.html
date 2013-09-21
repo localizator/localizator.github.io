@@ -73,34 +73,35 @@
 
     <div class='article'>
         <div class="content-title">
-            <a href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/"><h1>Другий реліз-кандидат інсталятора Debian 7.0</h1></a>
-            <span class="article-date">28 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/debian/">debian</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/wheezy/">wheezy</a>, <a href="http://localizator.github.io/tag/installer/">installer</a></span> 
+            <a href="http://localizator.github.io/2013-09-21/chromium-wayland/"><h1>Chromium адаптований для Wayland.</h1></a>
+            <span class="article-date">21 вересня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/linux/">linux</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/chromium/">chromium</a>, <a href="http://localizator.github.io/tag/wayland/">wayland</a></span> 
         </div>
         
-        <div><p><a href="http://www.flickr.com/photos/localizatorua/8692289119/" target="_blank"><img alt="Debian" src="http://farm9.staticflickr.com/8536/8692289119_fbc2cb8154.jpg" /></a></p>
+        <div><p>Тьяго Віньятті (Tiago Vignatti) з компанії Intel <a href="http://vignatti.com/2013/09/18/welcome-to-chromiums-ozone-wayland/" target="_blank"><strong>повідомив</strong></a> про успішне забезпечення роботи браузера Chromium в оточенні Wayland. Незважаючи на успішний запуск, проект поки не вийшов зі стадії розробки і вимагає додаткової стабілізації. Робота поверх Wayland організована завдяки створенню Ozone-Wayland, адаптованого для роботи з Wayland набору C++ класів Ozone, що використовуються в Chromium для абстрагування виведення на різні віконні системи. Проведена робота також дозволяє організувати виконання в оточенні Wayland та інших продуктів на кодової базі Chromium, в тому числі браузера Chrome і операційної системи ChromeOS.</p>
+<p><img alt="Chromium on Wayland" src="/static/images/2013/09/0_1379570167.png" />  </p></div>
+        <hr />
+    </div>
+		
+    
+ 
+        
+
+ 
+
+    <div class='article'>
+        <a href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/"><h2>Другий реліз-кандидат інсталятора Debian 7.0</h2></a>
+        <div class= "well small"> <span class="article-date">28 квітня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
+ <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/debian/">debian</a>, <a href="http://localizator.github.io/tag/linux/">linux</a>, <a href="http://localizator.github.io/tag/wheezy/">wheezy</a>, <a href="http://localizator.github.io/tag/installer/">installer</a></span> </div>
+        <div class="summary"><p><a href="http://www.flickr.com/photos/localizatorua/8692289119/" target="_blank"><img alt="Debian" src="http://farm9.staticflickr.com/8536/8692289119_fbc2cb8154.jpg" /></a></p>
 <p><a href="http://lists.debian.org/debian-devel-announce/2013/04/msg00011.html">Представлений</a> другий, фінальний, кандидат в релізи <a href="http://www.debian.org/devel/debian-installer">програми встановлення</a> Debian GNU/Linux для прийдешнього випуску "Wheezy" (7.0). В даний час в Wheezy всі блокуючі реліз помилки усунуті, вихід нової версії очікується 4 або 5 травня.</p>
 <!-- more -->
 
 <p>Основні зміни, у порівнянні з першим кандидатом в релізи інсталятора Debian 7.0:</p>
 <ul>
-<li>З ядра 3.4.37 портовано підсистеми drm і agp, що дозволило включити більш сучасні графічні драйвери intel, nouveau і radeon;</li>
-<li>У gdm3 реалізована базова підтримка екранного рідера Orca;</li>
-<li>Усунені проблеми з роботою текстового інсталятора;</li>
-<li>Порція поліпшень в роботі мережевого конфігуратора netcfg. Наприклад, активована одночасне встановлення пакетів iw і wireless-tools;</li>
-<li>Підготовлений образ для завантаження по мережі для armhf-архітектури vexpress, використовуваної емулятором QEMU;</li>
-<li>У пакет input-modules доданий модуль hid-topseed, а також драйвери для клавіатур і мишей з інтерфейсом USB hid-a4tech, hid-cypress, hid-ezkey, hid-kensington, hid-keytouch, hid-kye, hid-multitouch, hid -ortek, hid-primax, hid-quanta, hid-samsung, hid-speedlink;</li>
-<li>До складу пакету initramfs-tools включена серія додаткових HUD-драйверів, таким чином всі доступні в інсталяторі драйвери пристроїв введення будуть в наявності і у встановленій системі;</li>
-<li>Покращене встановлення на системи з EFI, проте ще спостерігаються проблеми із завантаженням в режимі UEFI на деяких системах;</li>
-<li>DRM_PSB замінений на DRM_GMA500, DRM_GMA600, DRM_GMA3600 і DRM_MEDFIELD;</li>
-<li>У модулі ata_piix включена підтримка госетвих систем MS Virtual PC;</li>
-<li>Доданий новий драйвер alx для пристроїв на базі чіпів Atheros AR8161 і AR8162;</li>
-<li>З ядра 3.7 перенесений драйвер iguanair (Iguanaworks USB IR Transceiver);</li>
-<li>У модуль rt2800 додана підтримка чіпсетів RT5390R.</li>
-</ul></div>
-        <hr />
-    </div>
-		
+<li>З ядра ...</li></ul></!--> <a class="btn btn-info xsmall" href="http://localizator.github.io/2013-04-28/debian-installer-7-0-rc2/">Читати далі &rarr;</a></div>
+    </div>	
+				
     
  
         
@@ -148,22 +149,6 @@
 Шаблони з різним підсвічуванням знаходяться ...</!--></p> <a class="btn btn-info xsmall" href="http://localizator.github.io/2013-01-13/syntax-highlighting-on-nano/">Читати далі &rarr;</a></div>
     </div>	
 				
-    
- 
-        
-
- 
-
-    <div class='article'>
-        <a href="http://localizator.github.io/2013-09-13/twitter-5-0-beta/"><h2>Twitter 5.0 beta для Android з абсолютно новим інтерфейсом</h2></a>
-        <div class= "well small"> <span class="article-date">13 вересня 2013</span>&nbsp;<span class="article-section">у розділі <a href="http://localizator.github.io/category/news/">news</a></span>&nbsp; 
- <span class="article-tag">з тегами: <a href="http://localizator.github.io/tag/twitter/">twitter</a>, <a href="http://localizator.github.io/tag/beta/">beta</a></span> </div>
-        <div class="summary"><p>Тестерам стала доступна бета-версія наступної мажорної гілки офіційного клієнта Twitter для Android. Судячи з усього, в п'ятій версії свого додатку у Twitter вирішили взагалі закреслити той інтерфейс, який вони вилизували останні роки, і почати все з чистого аркуша.
-<!-- more -->
-Найбільшою зміною є переосмислення інтерфейсу в стилі Holo.</p>
-<p>Замість старих трьох ...</p> <a class="btn btn-info xsmall" href="http://localizator.github.io/2013-09-13/twitter-5-0-beta/">Читати далі &rarr;</a></div>
-    </div>	
-				
             <div class="pagination">
 <ul>
     <li class="prev disabled"><a href="#">&larr; Попередня</a></li>
@@ -203,6 +188,7 @@
                                 <li><a href="http://localizator.github.io/category/apps/">apps</a></li>
                                 <li><a href="http://localizator.github.io/category/archlinux/">archlinux</a></li>
                                 <li><a href="http://localizator.github.io/category/howto/">howto</a></li>
+                                <li><a href="http://localizator.github.io/category/linux/">linux</a></li>
                                 <li><a href="http://localizator.github.io/category/news/">news</a></li>
                                    
             </ul>
@@ -215,18 +201,22 @@
                 </li>
                 
                 <ul>
-                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
+                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
+                                <li class="tag-10"><a href="/tag/wayland/">wayland</a></li>
                                 <li class="tag-10"><a href="/tag/beta/">beta</a></li>
                                 <li class="tag-6"><a href="/tag/ubuntu/">ubuntu</a></li>
-                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
-                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
-                                <li class="tag-10"><a href="/tag/installer/">installer</a></li>
-                                <li class="tag-10"><a href="/tag/nano/">nano</a></li>
-                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
+                                <li class="tag-10"><a href="/tag/disk/">disk</a></li>
                                 <li class="tag-10"><a href="/tag/twitter/">twitter</a></li>
-                                <li class="tag-6"><a href="/tag/raringringtail/">raringringtail</a></li>
-                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
+                                <li class="tag-10"><a href="/tag/netctl/">netctl</a></li>
+                                <li class="tag-10"><a href="/tag/systemd/">systemd</a></li>
+                                <li class="tag-10"><a href="/tag/chromium/">chromium</a></li>
+                                <li class="tag-10"><a href="/tag/yandex/">yandex</a></li>
+                                <li class="tag-10"><a href="/tag/debian/">debian</a></li>
                                 <li class="tag-1"><a href="/tag/linux/">linux</a></li>
+                                <li class="tag-10"><a href="/tag/nano/">nano</a></li>
+                                <li class="tag-10"><a href="/tag/arch/">arch</a></li>
+                                <li class="tag-10"><a href="/tag/wheezy/">wheezy</a></li>
+                                <li class="tag-10"><a href="/tag/installer/">installer</a></li>
                             </ul>                
             </ul>
             </div>
