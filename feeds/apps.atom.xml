@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://feeds.feedburner.com/feeds/apps.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-04-25T13:30:00+03:00</updated><entry><title>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</title><link href="http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/" rel="alternate"></link><updated>2013-04-25T13:30:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/</id><summary type="html">&lt;p&gt;Вийшла Ubuntu Tweak 0.8.4 - нова версія одного з самим популярних і відомих твікерів для тонкого налаштування Ubuntu. Крім усього іншого, серед плюсів варто відзначити можливість встановлення різних програм не доступних з центру програм і очищення кешу системи.
 &lt;!-- more --&gt;
-&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak.png" /&gt;&lt;/p&gt;
+&lt;img alt="Ubuntu Tweak" src="/images/2013/04/ubuntu-tweak.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Нова версія вийшла з реалізацією повної підтримки Raring Ringtail і усуненням низки помилок, переглянути які &lt;a href="http://blog.ubuntu-tweak.com/2013/04/25/ubuntu-tweak-0-8-4-released.html"&gt;можна тут&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak2.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak3.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/images/2013/04/ubuntu-tweak2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/images/2013/04/ubuntu-tweak3.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Встановлення Ubuntu Tweak 0.8.4&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:::sh
-sudo add-apt-repository ppa:tualatrix/ppa
+&lt;pre&gt;&lt;code&gt;sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update
 sudo apt-get install ubuntu-tweak
 &lt;/code&gt;&lt;/pre&gt;</summary><category term="ubuntu"></category><category term="linux"></category><category term="raringringtail"></category></entry></feed>

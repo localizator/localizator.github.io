@@ -4,22 +4,22 @@
 &lt;!-- more --&gt;&lt;/p&gt;
 &lt;p&gt;AppSales - безкоштовний, простий, зручний і настроюється монітор знижок для додатків в гугломаркеті. Після установки користувачеві доступні 2 режими перегляду цікавих пропозицій: повний список акцій і розпродажів, а також трекінг цін на конкретні програми.  &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;AppSales&lt;/strong&gt; | &lt;a href="https://play.google.com/store/apps/details?id=net.tsapps.appsales&amp;amp;hl=uk" target="_blank"&gt;&lt;strong&gt;Google Play&lt;/strong&gt;&lt;/a&gt; (free)&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Wed, 18 Dec 2013 03:03:00 +0200</pubDate><guid>tag:localizator.github.io,2013-12-18:2013-12-18/google-play-sales/</guid><category>android</category><category>google</category><category>play</category><category>sales</category></item><item><title>Chromium адаптований для Wayland.</title><link>http://localizator.github.io/2013-09-21/chromium-wayland/</link><description>&lt;p&gt;Тьяго Віньятті (Tiago Vignatti) з компанії Intel &lt;a href="http://vignatti.com/2013/09/18/welcome-to-chromiums-ozone-wayland/" target="_blank"&gt;&lt;strong&gt;повідомив&lt;/strong&gt;&lt;/a&gt; про успішне забезпечення роботи браузера Chromium в оточенні Wayland. Незважаючи на успішний запуск, проект поки не вийшов зі стадії розробки і вимагає додаткової стабілізації. Робота поверх Wayland організована завдяки створенню Ozone-Wayland, адаптованого для роботи з Wayland набору C++ класів Ozone, що використовуються в Chromium для абстрагування виведення на різні віконні системи. Проведена робота також дозволяє організувати виконання в оточенні Wayland та інших продуктів на кодової базі Chromium, в тому числі браузера Chrome і операційної системи ChromeOS.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Chromium on Wayland" src="/static/images/2013/09/0_1379570167.png" /&gt;  &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Sat, 21 Sep 2013 00:00:00 +0300</pubDate><guid>tag:localizator.github.io,2013-09-21:2013-09-21/chromium-wayland/</guid><category>chromium</category><category>wayland</category></item><item><title>Twitter 5.0 beta для Android з абсолютно новим інтерфейсом</title><link>http://localizator.github.io/2013-09-13/twitter-5-0-beta/</link><description>&lt;p&gt;Тестерам стала доступна бета-версія наступної мажорної гілки офіційного клієнта Twitter для Android. Судячи з усього, в п'ятій версії свого додатку у Twitter вирішили взагалі закреслити той інтерфейс, який вони вилизували останні роки, і почати все з чистого аркуша.
+&lt;p&gt;&lt;img alt="Chromium on Wayland" src="/images/2013/09/0_1379570167.png" /&gt;  &lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Sat, 21 Sep 2013 00:00:00 +0300</pubDate><guid>tag:localizator.github.io,2013-09-21:2013-09-21/chromium-wayland/</guid><category>chromium</category><category>wayland</category></item><item><title>Twitter 5.0 beta для Android з абсолютно новим інтерфейсом</title><link>http://localizator.github.io/2013-09-13/twitter-5-0-beta/</link><description>&lt;p&gt;Тестерам стала доступна бета-версія наступної мажорної гілки офіційного клієнта Twitter для Android. Судячи з усього, в п'ятій версії свого додатку у Twitter вирішили взагалі закреслити той інтерфейс, який вони вилизували останні роки, і почати все з чистого аркуша.
 &lt;!-- more --&gt;
 Найбільшою зміною є переосмислення інтерфейсу в стилі Holo.&lt;/p&gt;
 &lt;p&gt;Замість старих трьох вкладок тепер доступні наступні: Home, Notifications, Messages, Activity, Trending, Find people і Me. Між вкладками можна перемикатися свайпами або тапами по навігаційній панелі.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-01-32-51.png" /&gt;  &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-01-33-02.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Twitter 5.0" src="/images/2013/09/Screenshot_2013-09-13-01-32-51.png" /&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Twitter 5.0" src="/images/2013/09/Screenshot_2013-09-13-01-33-02.png" /&gt;&lt;/p&gt;
 &lt;p&gt;У самій стрічці став доступний попередній перегляд зображень і відео. &lt;/p&gt;
 &lt;p&gt;Зліва виїжджає додаткова панель. Тут можна відсортувати вкладки в зручному порядку, переключитися між акаунтами і дістатися до налаштувань. Налаштування майже не змінилися. Але уважне око зачепиться за два нових пункти. Перший - галочка включення превю зображень і відео в стрічці. Другий - пункт «Безпека» у налаштуваннях облікового запису. Тут можна активувати можливість захистити свій аккаунт прив'язкою до даного пристрою.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-18-11-14.png" /&gt;  &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Twitter 5.0" src="/static/images/2013/09/Screenshot_2013-09-13-18-22-56.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Twitter 5.0" src="/images/2013/09/Screenshot_2013-09-13-18-11-14.png" /&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Twitter 5.0" src="/images/2013/09/Screenshot_2013-09-13-18-22-56.png" /&gt;&lt;/p&gt;
 &lt;p&gt;У цілому можу описати свої враження як неоднозначні. З одного боку нова навігація злегка незграбна, а бічну панель хотілося б відкривати свайпом в самому лівому екрані, а не цілитися пальцем у маленьку кнопочку. З іншого - радує, що Twitter під Android володіє своїм характером і прагне використовувати максимум можливостей платформи, а також маленькими, але впевненим кроками додає функціональність, на яку раніше можна було розраховувати тільки в сторонніх клієнтах.&lt;/p&gt;
 &lt;p&gt;Кортить спробувати новий Твіттер в дії? Тримайте посилання на apk: &lt;a href="http://db.tt/Sq0RDLfy" target="_blank"&gt;посилання&lt;/a&gt;.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Fri, 13 Sep 2013 00:00:00 +0300</pubDate><guid>tag:localizator.github.io,2013-09-13:2013-09-13/twitter-5-0-beta/</guid><category>twitter</category><category>beta</category></item><item><title>Вийшов офіційний клієнт Яндекс.Диск для Linux</title><link>http://localizator.github.io/2013-08-27/yandex-disk-official-released-linux/</link><description>&lt;p&gt;Яндекс.Диск - хмарний сервіс компанії Яндекс. Раніше з Linux працював тільки через WebDAV, для чого були придатні лише деякі файлові менеджери, або монтування за допомогою davfs2.&lt;/p&gt;
 &lt;p&gt;Тепер випущений клієнт. Консольний, вихідні коди закриті - але настроювати зручніше, ніж davfs2, а синхронізація локальних файлів не вимагає скриптової обв'язки. Досить встановити програму, налаштувати підключення, а потім вибрати каталоги, які підлягають або не підлягають синхронізації.
 &lt;!-- more --&gt;
 У нього є вся основна функціональність, яка є у клієнтів для OS X і Windows, і навіть більше (сімлінки!), і одна особливість - він консольний.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Яндекс.Диск" src="/static/images/2013/09/yandex_disk.png" /&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Яндекс.Диск" src="/images/2013/09/yandex_disk.png" /&gt;  &lt;/p&gt;
 &lt;p&gt;Нижче читайте про те, як він налаштовується, що конкретно вміє, і про те, як саме він влаштований і що в ньому було непросто зробити.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Встановлення&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Встановити його можна &lt;a href="http://repo.yandex.ru/yandex-disk/"&gt;тут&lt;/a&gt;. Відразу після установки пакета в терміналі з'явиться команда &lt;strong&gt;yandex-disk&lt;/strong&gt;, через яку в подальшому і йде робота з хмарою Яндекса. Після цього потрібно вручну запустити команду &lt;strong&gt;setup&lt;/strong&gt;.&lt;/p&gt;
@@ -66,58 +66,57 @@
 &lt;li&gt;&lt;a href="http://www.phoronix.com/scan.php?page=news_item&amp;amp;px=MTM5NTA" target="_blank"&gt;Mozilla випустила Firefox 22&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Fri, 28 Jun 2013 22:30:00 +0300</pubDate><guid>tag:localizator.github.io,2013-06-28:2013-06-28/interesting-links-june-2013/</guid><category>linux</category></item><item><title>Вийшов Ubuntu Tweak 0.8.4 з підтримкою Raring Ringtail</title><link>http://localizator.github.io/2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/</link><description>&lt;p&gt;Вийшла Ubuntu Tweak 0.8.4 - нова версія одного з самим популярних і відомих твікерів для тонкого налаштування Ubuntu. Крім усього іншого, серед плюсів варто відзначити можливість встановлення різних програм не доступних з центру програм і очищення кешу системи.
 &lt;!-- more --&gt;
-&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak.png" /&gt;&lt;/p&gt;
+&lt;img alt="Ubuntu Tweak" src="/images/2013/04/ubuntu-tweak.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Нова версія вийшла з реалізацією повної підтримки Raring Ringtail і усуненням низки помилок, переглянути які &lt;a href="http://blog.ubuntu-tweak.com/2013/04/25/ubuntu-tweak-0-8-4-released.html"&gt;можна тут&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak2.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/static/images/2013/04/ubuntu-tweak3.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/images/2013/04/ubuntu-tweak2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu Tweak" src="/images/2013/04/ubuntu-tweak3.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Встановлення Ubuntu Tweak 0.8.4&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:::sh
-sudo add-apt-repository ppa:tualatrix/ppa
+&lt;pre&gt;&lt;code&gt;sudo add-apt-repository ppa:tualatrix/ppa
 sudo apt-get update
 sudo apt-get install ubuntu-tweak
 &lt;/code&gt;&lt;/pre&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">localizator</dc:creator><pubDate>Thu, 25 Apr 2013 13:30:00 +0300</pubDate><guid>tag:localizator.github.io,2013-04-25:2013-04-25/ubuntu-tweak-0-8-4-on-ubuntu-13-04/</guid><category>ubuntu</category><category>linux</category><category>raringringtail</category></item><item><title>Вийшов реліз Ubuntu 13.04 Raring Ringtail</title><link>http://localizator.github.io/2013-04-25/ubuntu-13-04-released/</link><description>&lt;p&gt;Представлена ​​фінальна версія Ubuntu 13.04 Raring Ringtail, що вийшла з безліччю різних поліпшень як в плані інтерфейсу, так і в технічної складової. Також, за той час поки йшла розробка дистрибутива, відбулося безліч подій, так чи інакше вплинули на подальшу долю Ubuntu, серед яких варто відзначити редакцію для мобільних пристроїв, обговорення переходу на модель роллінг-релізу і «розумний пошук».&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu 13.04" src="/static/images/2013/04/logoubuntu1304.jpg" /&gt; 
+&lt;p&gt;&lt;img alt="Ubuntu 13.04" src="/images/2013/04/logoubuntu1304.jpg" /&gt; 
 &lt;!-- more --&gt;&lt;/p&gt;
 &lt;p&gt;Так як з моменту виходу бета-релізу, який передбачає під собою заморозку функцій дистрибутива, не відбулося істотних змін, так що поверхнево розглянемо тільки ключові зміни з них.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Основні зміни інтерфейсу:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Були додані нові іконки для панелі Unity, лінз і ряду програм за умовчанням.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Unity new icons" src="/static/images/2013/04/unityicons.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Unity new icons" src="/images/2013/04/unityicons.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Іконка перемикання робочих столів тепер міняється залежно від того, де перебуває користувач.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Unity Desktop switcher" src="/static/images/2013/04/desktop_switcher.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Unity Desktop switcher" src="/images/2013/04/desktop_switcher.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;З'явилися два нові способи перемикання між вікнами програм, таких як прокручування середньою кнопкою миші по значку і вибір потрібного вікна з контекстного меню.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Unity Window switcher" src="/static/images/2013/04/window_switcher.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Unity Window switcher" src="/images/2013/04/window_switcher.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Більш інтуїтивний інтерфейс перегляду докладної інформації в Dash, а також додана підтримка фірмового скроллбара.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Unity preview" src="/static/images/2013/04/unitypreview.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Scrollbar" src="/static/images/2013/04/scrollbar.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Unity preview" src="/images/2013/04/unitypreview.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Scrollbar" src="/images/2013/04/scrollbar.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Вилучений системний трей, доданий новий індикатор Bluetooth і синхронізації з хмарними сервісами.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="New Sync Munu" src="/static/images/2013/04/syncmenu.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="New Sync Munu" src="/images/2013/04/syncmenu.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Діалоги виходу з системи отримали новий дизайн.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Shutdown dialog" src="/static/images/2013/04/shutdowndialog.png" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Logout dialog" src="/static/images/2013/04/logoutdialog.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Shutdown dialog" src="/images/2013/04/shutdowndialog.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Logout dialog" src="/images/2013/04/logoutdialog.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;У режимі групування вікон (Super + W) при наведенні з'явилася яскраве помаранчеве обрамлення і заголовк програми.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Group Window" src="/static/images/2013/04/groupwindow.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Group Window" src="/images/2013/04/groupwindow.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;У мережевих облікових записах з'явилася можливість вибору окремих програм для кожного окремого сервісу.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Social Apps" src="/static/images/2013/04/socialapps.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Social Apps" src="/images/2013/04/socialapps.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;У налаштування зовнішнього вигляду внесено дві нові опції: включення/вимикання іконки перемикання робочого стала і переходу на робочий стіл.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Desktop Settings" src="/static/images/2013/04/desktopsettings.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Desktop Settings" src="/images/2013/04/desktopsettings.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Програми&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Тепер у Dash підтримується пошук, навіть якщо була допущена помилка
@@ -151,7 +150,7 @@ Linux kernel, засноване на Linux 3.8.8.&lt;/p&gt;
 полягає у створення нової перехідної платформи, яка в подальшому зможе
 працювати під всіма доступними форм-факторами, адаптуючись під
 встановлену роздільну здатність.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ubuntu Touch" src="/static/images/2013/04/ubuntutouch.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ubuntu Touch" src="/images/2013/04/ubuntutouch.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Це буде досягатися за рахунок підвантаження певних шаблонів у
 кожній конкретній ситуації, при цьому використовуючи одну кодову базу і
 єдиний стиль оформлення інтерфейсу. Таким чином, не потрібно буде
@@ -168,8 +167,7 @@ Linux kernel, засноване на Linux 3.8.8.&lt;/p&gt;
 &lt;p&gt;Smart Scope - позиціонується як віддалена область, що дозволяє визначити найбільш підходящі місця для пошуку. Так як області в головному меню постійно поповнюються, а їх велика кількість може помітно сповільнити роботу системи, розробниками було прийнято рішення відкласти це навантаження на віддалений сервер, при цьому повністю зберігши весь необхідний функціонал.&lt;/p&gt;
 &lt;p&gt;Спочатку функція планувалася для включення до поточний реліз, але через достатню сирість і не завершеність проекту він був відкладений для включення в наступний випуск.&lt;/p&gt;
 &lt;p&gt;Проте, охочі можуть потестувати його з PPA.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:::sh
-sudo add-apt-repository ppa:ubuntu-unity/experimental-certified
+&lt;pre&gt;&lt;code&gt;sudo add-apt-repository ppa:ubuntu-unity/experimental-certified
 sudo apt-get update
 sudo apt-get dist-upgrade
 &lt;/code&gt;&lt;/pre&gt;
@@ -205,8 +203,7 @@ ConnectionMode='persist'  &lt;/p&gt;
 &lt;p&gt;Всім відомий простий текстовий редактор nano. Він поставляється як редактор за замовчуванням у більшості дистрибутивів linux і має величезну кількість користувачів, мабуть, більше, ніж будь-який інший редактор. Але найчастіше в ньому не вистачає однієї приємної дрібниці - підсвічування синтаксису. Втім, це можна легко і швидко виправити.
 &lt;!-- more --&gt;
 Шаблони з різним підсвічуванням знаходяться за шляхом /usr/share/nano. Що там вдасться знайти?&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:::sh
-ls /usr/share/nano
+&lt;pre&gt;&lt;code&gt;ls /usr/share/nano
 
 asm.nanorc
 awk.nanorc
@@ -240,8 +237,7 @@ xml.nanorc
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Отже, в нашому розпорядженні підсвічування мов програмування c, python, php і java. Можна розфарбувати html і css файли і дещо ще. Не так вже багато, але для справ насущних повинно вистачити.
 Справа за малим: створити файл .nanorc в домашній директорії і включити в нього необхідні стилі. Це може виглядати так:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;:::sh
-cat ~/.nanorc
+&lt;pre&gt;&lt;code&gt;cat ~/.nanorc
 
 include /usr/share/nano/makefile.nanorc
 include /usr/share/nano/python.nanorc
