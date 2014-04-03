@@ -4,7 +4,7 @@
 &lt;p&gt;Талісманом вільного ядра є Freedo, блакитний пінгвін, який щойно вийшов з душу.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Список змін:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Припинена підтримка aic7xxx_old и cs46xx.&lt;br /&gt;
-Додана функція reject_firmware_direct в сценарій чистки коду deblob.&lt;br /&gt;
+Додана функція ''reject_firmware_direct'' в сценарій чистки коду deblob.&lt;br /&gt;
 Пропрієтарні компоненти були видалені з драйверів bnx2x, bt_mrvl, cs46xx.&lt;br /&gt;
 Припинена підтримка btmtk.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://lists.gnu.org/archive/html/info-gnu/2014-03/msg00025.html"&gt;gnu.org&lt;/a&gt;&lt;/p&gt;</summary><category term="linux"></category><category term="kernel"></category><category term="libre"></category></entry><entry><title>Як не пропустити жодної знижки в Google Play</title><link href="http://localizator.github.io/2013-12-18/google-play-sales/" rel="alternate"></link><updated>2013-12-18T03:03:00+02:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-12-18:2013-12-18/google-play-sales/</id><summary type="html">&lt;p&gt;Google Play не надає користувачеві можливості наочно моніторити знижки та акції на додатки, а влаштовувати кожен день обхід по декількох десятках програм - не кращий спосіб провести час. Наявність засобу сповіщення про появу «солодких» пропозицій в Google Play допоможе купити потрібний софт максимально вигідно.&lt;/p&gt;
