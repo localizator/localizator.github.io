@@ -22,4 +22,34 @@ Connection=pppoe&lt;br /&gt;
 User='example@yourprovider.com'&lt;br /&gt;
 Password='very secret'&lt;br /&gt;
 ConnectionMode='persist'  &lt;/p&gt;
-&lt;/blockquote&gt;</summary><category term="arch"></category><category term="linux"></category><category term="systemd"></category><category term="netctl"></category></entry></feed>
+&lt;/blockquote&gt;</summary><category term="arch"></category><category term="linux"></category><category term="systemd"></category><category term="netctl"></category></entry><entry><title>Arch Linux перейшов на systemd</title><link href="http://localizator.github.io/2012-10-13/systemd-archlinux/" rel="alternate"></link><updated>2012-10-13T21:57:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2012-10-13:2012-10-13/systemd-archlinux/</id><summary type="html">&lt;p&gt;Дистрибутив Arch Linux &lt;a href="http://www.archlinux.org/news/systemd-is-now-the-default-on-new-installations/"&gt;перейшов&lt;/a&gt; на використання системного менеджера
+&lt;a href="http://freedesktop.org/wiki/Software/systemd"&gt;systemd&lt;/a&gt; за замовчуванням для нових встановлень. Зміна анонсовано
+через тиждень після переходу Live-збірки на systemd. До складу базової
+групи пакетів Arch Linux сьогодні включений systemd-sysvcompat, при
+встановленні якого система буде завантажуватися за замовчуванням з
+використанням systemd.  &lt;/p&gt;
+&lt;p&gt;Так як поки ще залишаються пакети для яких не підготовлені unit-файли
+systemd, користувачі можуть встановити пакет initscripts і
+використовувати масив DAEMONS в /etc/rc.conf для запуску сервісів за
+допомогою раніше застосовуваних стартових скриптів rc.d. Вже встановлені
+системи залишаються на системі ініціалізації sysvinit, підтримка якої в
+дистрибутиві буде збережена. Пакети initscripts і sysvinit залишаються в
+репозиторіях, доступні для встановлення і можуть бути використані на
+нових системах замість systemd.  &lt;/p&gt;
+&lt;p&gt;Користувачі, які бажають перевести свої вже встановлені системи на
+systemd, можуть здійснити міграцію вручну, дотримуючись спеціально
+підготовленої &lt;a href="https://wiki.archlinux.org/index.php/Systemd"&gt;інструкції&lt;/a&gt;. Можливе використання і гібридних схем, при
+яких для ініціалізації буде продовжено використання sysvinit, а для
+управління сервісами - systemd. До складу systemd входять підсистеми,
+які можуть замінити такі служби, як syslog, cron, acpid і xinetd, тим не
+менш, користувачу надана можливість продовжити використання зазначених
+сервісів, якщо його чимось не влаштовують аналогічні компоненти systemd.
+Для проведення експериментів можна одночасно використовувати пакети
+systemd і initscripts, викликаючи systemd через передачу параметра
+"init=/usr/lib/systemd/systemd" в процесі запуску системи.  &lt;/p&gt;</summary><category term="arch"></category><category term="linux"></category><category term="systemd"></category><category term="netctl"></category></entry><entry><title>Arch Linux перейшов на GRUB 2 і припинив підтримку старої гілки GRUB</title><link href="http://localizator.github.io/2012-07-20/archlinux-grub2/" rel="alternate"></link><updated>2012-07-20T15:14:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2012-07-20:2012-07-20/archlinux-grub2/</id><summary type="html">&lt;p&gt;Розробники Arch Linux &lt;a href="http://www.archlinux.org/news/grub-legacy-no-longer-supported/"&gt;повідомили&lt;/a&gt; про переведення core-компонентів
+дистрибутива на &lt;a href="https://wiki.archlinux.org/index.php/Grub"&gt;використання&lt;/a&gt; завантажувача GRUB 2. У зв'язку з цим,
+минула стабільна гілка GRUB (0.9x) переміщена в неофіційний репозиторій
+AUR і більше не підтримується. На вже встановлених системах стара версія
+GRUB не буде оновлено автоматично і залишиться повністю працездатною.
+Незважаючи на це, користувачам подібних систем рекомендується виконати
+оновлення до GRUB 2 &lt;a href="https://wiki.archlinux.org/index.php/Grub#From_a_running_Arch_Linux"&gt;вручну&lt;/a&gt;.&lt;/p&gt;</summary><category term="arch"></category><category term="linux"></category><category term="grub"></category></entry></feed>

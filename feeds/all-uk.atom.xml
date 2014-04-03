@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://localizator.github.io/feeds/all-uk.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2013-12-18T03:03:00+02:00</updated><entry><title>Як не пропустити жодної знижки в Google Play</title><link href="http://localizator.github.io/2013-12-18/google-play-sales/" rel="alternate"></link><updated>2013-12-18T03:03:00+02:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-12-18:2013-12-18/google-play-sales/</id><summary type="html">&lt;p&gt;Google Play не надає користувачеві можливості наочно моніторити знижки та акції на додатки, а влаштовувати кожен день обхід по декількох десятках програм - не кращий спосіб провести час. Наявність засобу сповіщення про появу «солодких» пропозицій в Google Play допоможе купити потрібний софт максимально вигідно.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>localizator@notes</title><link href="http://localizator.github.io/" rel="alternate"></link><link href="http://localizator.github.io/feeds/all-uk.atom.xml" rel="self"></link><id>http://localizator.github.io/</id><updated>2014-04-03T00:00:00+03:00</updated><entry><title>Вийшло вільне ядро GNU Linux-libre 3.14-gnu.</title><link href="http://localizator.github.io/2014-04-03/linux-libre-314/" rel="alternate"></link><updated>2014-04-03T00:00:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2014-04-03:2014-04-03/linux-libre-314/</id><summary type="html">&lt;p&gt;Вийшло вільне ядро GNU Linux-libre 3.14-gnu з кодовим ім'ям «Freedom Pi». GNU Linux-libre — вільна версія ядра Linux, яка підходить для використання з операційною системою GNU.&lt;/p&gt;
+&lt;p&gt;У даному ядрі видалені всі пропрієтарні компоненти. Ядро Linux-libre було спочатку в дистрибутиві gNewSense GNU/Linux. У 2008 році ядро стало частиною проекту, підтримуваним FSF в Латинській Америці, а в 2012 році стало частиною проекту GNU. &lt;/p&gt;
+&lt;p&gt;Талісманом вільного ядра є Freedo, блакитний пінгвін, який щойно вийшов з душу.&lt;/p&gt;
+&lt;p&gt;Список змін:&lt;/p&gt;
+&lt;p&gt;Припинена підтримка aic7xxx_old и cs46xx.
+Додана функція reject_firmware_direct в сценарій чистки коду deblob.
+Пропрієтарні компоненти були видалені з драйверів bnx2x, bt_mrvl, cs46xx.
+Припинена підтримка btmtk.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lists.gnu.org/archive/html/info-gnu/2014-03/msg00025.html"&gt;gnu.org&lt;/a&gt;&lt;/p&gt;</summary><category term="linux"></category><category term="kernel"></category><category term="libre"></category></entry><entry><title>Як не пропустити жодної знижки в Google Play</title><link href="http://localizator.github.io/2013-12-18/google-play-sales/" rel="alternate"></link><updated>2013-12-18T03:03:00+02:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2013-12-18:2013-12-18/google-play-sales/</id><summary type="html">&lt;p&gt;Google Play не надає користувачеві можливості наочно моніторити знижки та акції на додатки, а влаштовувати кожен день обхід по декількох десятках програм - не кращий спосіб провести час. Наявність засобу сповіщення про появу «солодких» пропозицій в Google Play допоможе купити потрібний софт максимально вигідно.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Google Play" src="/images/2013/12/appsales.jpg" /&gt; 
 &lt;!-- more --&gt;&lt;/p&gt;
 &lt;p&gt;AppSales - безкоштовний, простий, зручний і настроюється монітор знижок для додатків в гугломаркеті. Після встановлення користувачеві доступні 2 режими перегляду цікавих пропозицій: повний список акцій і розпродажів, а також трекінг цін на конкретні програми з списку спостереження.  &lt;/p&gt;
@@ -256,4 +264,34 @@ include /usr/share/nano/php.nanorc
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Тепер подивимося як відображається файл з одним із влюченних шаблонів.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="syntax highlighting on nano" src="http://i.imgur.com/x3ITr.png" /&gt;&lt;/p&gt;
-&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry></feed>
+&lt;p&gt;Не так уже й погано. Принаймні, це набагато зручніше, ніж відсутність підсвічування як такого. І - так - це все, користуємося.&lt;/p&gt;</summary><category term="nano"></category><category term="linux"></category></entry><entry><title>Arch Linux перейшов на systemd</title><link href="http://localizator.github.io/2012-10-13/systemd-archlinux/" rel="alternate"></link><updated>2012-10-13T21:57:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2012-10-13:2012-10-13/systemd-archlinux/</id><summary type="html">&lt;p&gt;Дистрибутив Arch Linux &lt;a href="http://www.archlinux.org/news/systemd-is-now-the-default-on-new-installations/"&gt;перейшов&lt;/a&gt; на використання системного менеджера
+&lt;a href="http://freedesktop.org/wiki/Software/systemd"&gt;systemd&lt;/a&gt; за замовчуванням для нових встановлень. Зміна анонсовано
+через тиждень після переходу Live-збірки на systemd. До складу базової
+групи пакетів Arch Linux сьогодні включений systemd-sysvcompat, при
+встановленні якого система буде завантажуватися за замовчуванням з
+використанням systemd.  &lt;/p&gt;
+&lt;p&gt;Так як поки ще залишаються пакети для яких не підготовлені unit-файли
+systemd, користувачі можуть встановити пакет initscripts і
+використовувати масив DAEMONS в /etc/rc.conf для запуску сервісів за
+допомогою раніше застосовуваних стартових скриптів rc.d. Вже встановлені
+системи залишаються на системі ініціалізації sysvinit, підтримка якої в
+дистрибутиві буде збережена. Пакети initscripts і sysvinit залишаються в
+репозиторіях, доступні для встановлення і можуть бути використані на
+нових системах замість systemd.  &lt;/p&gt;
+&lt;p&gt;Користувачі, які бажають перевести свої вже встановлені системи на
+systemd, можуть здійснити міграцію вручну, дотримуючись спеціально
+підготовленої &lt;a href="https://wiki.archlinux.org/index.php/Systemd"&gt;інструкції&lt;/a&gt;. Можливе використання і гібридних схем, при
+яких для ініціалізації буде продовжено використання sysvinit, а для
+управління сервісами - systemd. До складу systemd входять підсистеми,
+які можуть замінити такі служби, як syslog, cron, acpid і xinetd, тим не
+менш, користувачу надана можливість продовжити використання зазначених
+сервісів, якщо його чимось не влаштовують аналогічні компоненти systemd.
+Для проведення експериментів можна одночасно використовувати пакети
+systemd і initscripts, викликаючи systemd через передачу параметра
+"init=/usr/lib/systemd/systemd" в процесі запуску системи.  &lt;/p&gt;</summary><category term="arch"></category><category term="linux"></category><category term="systemd"></category><category term="netctl"></category></entry><entry><title>Arch Linux перейшов на GRUB 2 і припинив підтримку старої гілки GRUB</title><link href="http://localizator.github.io/2012-07-20/archlinux-grub2/" rel="alternate"></link><updated>2012-07-20T15:14:00+03:00</updated><author><name>localizator</name></author><id>tag:localizator.github.io,2012-07-20:2012-07-20/archlinux-grub2/</id><summary type="html">&lt;p&gt;Розробники Arch Linux &lt;a href="http://www.archlinux.org/news/grub-legacy-no-longer-supported/"&gt;повідомили&lt;/a&gt; про переведення core-компонентів
+дистрибутива на &lt;a href="https://wiki.archlinux.org/index.php/Grub"&gt;використання&lt;/a&gt; завантажувача GRUB 2. У зв'язку з цим,
+минула стабільна гілка GRUB (0.9x) переміщена в неофіційний репозиторій
+AUR і більше не підтримується. На вже встановлених системах стара версія
+GRUB не буде оновлено автоматично і залишиться повністю працездатною.
+Незважаючи на це, користувачам подібних систем рекомендується виконати
+оновлення до GRUB 2 &lt;a href="https://wiki.archlinux.org/index.php/Grub#From_a_running_Arch_Linux"&gt;вручну&lt;/a&gt;.&lt;/p&gt;</summary><category term="arch"></category><category term="linux"></category><category term="grub"></category></entry></feed>
